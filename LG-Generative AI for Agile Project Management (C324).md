@@ -1,795 +1,1438 @@
-# Generative AI for Agile Project Management (C324) — Learner Guide
+# Generative AI for Agile Project Management — Learner Guide
 
-**Course Code:** C324  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v1.0 · 27 July 2026**
+**Course Code:** C324  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v1.0 · 17 August 2026**
 
 ## Contents
 
 - [Introduction](#introduction)
 - [Course Learning Outcomes](#course-learning-outcomes)
-- [Before You Start — Preparation](#before-you-start--preparation)
-- [Topic 01 — Getting Started with Generative AI for Agile  (25%)](#topic-01--getting-started-with-generative-ai-for-agile--25)
-  - [Lab 1 — Set Up Your AI Toolkit for Agile Project Management](#lab-1--set-up-your-ai-toolkit-for-agile-project-management)
-  - [Lab 2 — Write Effective Prompts and Build an Agile Prompt Library](#lab-2--write-effective-prompts-and-build-an-agile-prompt-library)
-  - [Lab 3 — Apply Responsible, Human-in-the-Loop AI Practices](#lab-3--apply-responsible-human-in-the-loop-ai-practices)
-- [Topic 02 — AI for Backlogs, User Stories and Planning  (25%)](#topic-02--ai-for-backlogs-user-stories-and-planning--25)
-  - [Lab 4 — Draft and Refine User Stories and Acceptance Criteria](#lab-4--draft-and-refine-user-stories-and-acceptance-criteria)
-  - [Lab 5 — Groom and Prioritise the Product Backlog with AI](#lab-5--groom-and-prioritise-the-product-backlog-with-ai)
-  - [Lab 6 — Plan the Sprint, Estimate, and Build the Release Roadmap](#lab-6--plan-the-sprint-estimate-and-build-the-release-roadmap)
-- [Topic 03 — AI for Sprints, Standups and Delivery  (25%)](#topic-03--ai-for-sprints-standups-and-delivery--25)
-  - [Lab 7 — Summarise Stand-ups and Track Sprint Progress](#lab-7--summarise-stand-ups-and-track-sprint-progress)
-  - [Lab 8 — Identify Risks, Blockers and Dependencies with AI](#lab-8--identify-risks-blockers-and-dependencies-with-ai)
-  - [Lab 9 — Assist Documentation, Communication and Testing](#lab-9--assist-documentation-communication-and-testing)
-- [Topic 04 — AI for Reporting, Retrospectives and Improvement  (25%)](#topic-04--ai-for-reporting-retrospectives-and-improvement--25)
-  - [Lab 10 — Generate Status Reports and a Delivery Dashboard](#lab-10--generate-status-reports-and-a-delivery-dashboard)
-  - [Lab 11 — Analyse Velocity and Metrics with AI](#lab-11--analyse-velocity-and-metrics-with-ai)
-  - [Lab 12 — Run an AI-Assisted Retrospective and Plan Continuous Improvement](#lab-12--run-an-ai-assisted-retrospective-and-plan-continuous-improvement)
-- [Wrap-Up](#wrap-up)
-- [Next Steps](#next-steps)
+- [Skills Framework Alignment](#skills-framework-alignment)
+- [Before You Start — Your Course Tools](#before-you-start--your-course-tools)
+  - [Design Thinking Studio](#design-thinking-studio)
+  - [Padlet Classroom Board](#padlet-classroom-board)
+  - [Your Generative AI Assistant](#your-generative-ai-assistant)
+- [Topic 1 — Foundations of Design Thinking, Agile, and Generative AI](#topic-1--foundations-of-design-thinking-agile-and-generative-ai)
+  - [What Design Thinking Is](#what-design-thinking-is)
+  - [The Three Mindsets — Design Thinking, Lean and Agile](#the-three-mindsets--design-thinking-lean-and-agile)
+  - [The Double Diamond](#the-double-diamond)
+  - [The Five Stages of Design Thinking](#the-five-stages-of-design-thinking)
+  - [Wicked Problems](#wicked-problems)
+  - [How Generative AI Enhances the Loop](#how-generative-ai-enhances-the-loop)
+  - [Latest Trends in Innovation](#latest-trends-in-innovation)
+- [Topic 2 — Problem Framing and Ideation: Leveraging Design Thinking and Generative AI](#topic-2--problem-framing-and-ideation-leveraging-design-thinking-and-generative-ai)
+  - [Framing the Design Challenge](#framing-the-design-challenge)
+  - [Problem Statement, Point of View and How Might We](#problem-statement-point-of-view-and-how-might-we)
+  - [The Problem-Assumption Model](#the-problem-assumption-model)
+  - [Empathy Maps](#empathy-maps)
+  - [Persona Mapping](#persona-mapping)
+  - [Ideation Techniques](#ideation-techniques)
+  - [Prototyping and Testing](#prototyping-and-testing)
+- [Topic 3 — Agile Development and AI for Rapid Solution Delivery](#topic-3--agile-development-and-ai-for-rapid-solution-delivery)
+  - [Being Agile versus Doing Agile](#being-agile-versus-doing-agile)
+  - [Scrum](#scrum)
+  - [Dual-Track Agile](#dual-track-agile)
+  - [Converting Ideas into Agile Artefacts](#converting-ideas-into-agile-artefacts)
+  - [Release Prioritisation — The Three-Cake Model](#release-prioritisation--the-three-cake-model)
+  - [Agile Estimation](#agile-estimation)
+  - [Ceremonies, Artefacts and Information Radiators](#ceremonies-artefacts-and-information-radiators)
+  - [GenAI Across the Sprint](#genai-across-the-sprint)
+- [Topic 4 — Scaling and Sustaining Innovations with Agile Design Thinking and Generative AI](#topic-4--scaling-and-sustaining-innovations-with-agile-design-thinking-and-generative-ai)
+  - [The Three Levers That Actually Scale Innovation](#the-three-levers-that-actually-scale-innovation)
+  - [Culture — The Four Principles](#culture--the-four-principles)
+  - [Engaging Stakeholders and Creating Buy-In](#engaging-stakeholders-and-creating-buy-in)
+  - [Resource Management in Innovation Projects](#resource-management-in-innovation-projects)
+  - [Sensemaking](#sensemaking)
+  - [Systems Thinking](#systems-thinking)
+  - [Metrics and KPIs for Innovation](#metrics-and-kpis-for-innovation)
+- [Hands-On Activities](#hands-on-activities)
+  - [Activity 1 — Airbnb — Diagnosing Why a Method Alone Does Not Save a Business](#activity-1--airbnb--diagnosing-why-a-method-alone-does-not-save-a-business)
+  - [Activity 2 — Netflix vs Blockbuster — Innovation as an Operating System](#activity-2--netflix-vs-blockbuster--innovation-as-an-operating-system)
+  - [Activity 3 — Positioning GenAI in the Innovation Loop — Where It Helps and Where It Lies](#activity-3--positioning-genai-in-the-innovation-loop--where-it-helps-and-where-it-lies)
+  - [Activity 4 — GE Adventure Series — Reframing the Problem Instead of Fixing the Machine](#activity-4--ge-adventure-series--reframing-the-problem-instead-of-fixing-the-machine)
+  - [Activity 5 — IDEO Shopping Cart — Volume, Then Judgement](#activity-5--ideo-shopping-cart--volume-then-judgement)
+  - [Activity 6 — Rapid Prototyping with AI — From Concept to Testable Artefact in One Hour](#activity-6--rapid-prototyping-with-ai--from-concept-to-testable-artefact-in-one-hour)
+  - [Activity 7 — Spotify — Reading a Scaling Model Honestly](#activity-7--spotify--reading-a-scaling-model-honestly)
+  - [Activity 8 — From Hills to Backlog — Converting Ideas into Stories with GenAI](#activity-8--from-hills-to-backlog--converting-ideas-into-stories-with-genai)
+  - [Activity 9 — Running Dual-Track Agile — A Sprint Simulation with AI Assistance](#activity-9--running-dual-track-agile--a-sprint-simulation-with-ai-assistance)
+  - [Activity 10 — DBS Bank — Scaling Innovation Across 25,000 People](#activity-10--dbs-bank--scaling-innovation-across-25000-people)
+  - [Activity 11 — Boeing 737 MAX — Systems Thinking and the Cost of Local Optimisation](#activity-11--boeing-737-max--systems-thinking-and-the-cost-of-local-optimisation)
+  - [Activity 12 — Innovation Metrics — Designing KPIs That Change a Decision](#activity-12--innovation-metrics--designing-kpis-that-change-a-decision)
+- [Consolidating Your Learning](#consolidating-your-learning)
 - [Glossary](#glossary)
+- [References and Further Reading](#references-and-further-reading)
 
 
 ## Introduction
 
-This Learner Guide accompanies the Generative AI for Agile Project Management (C324) course, conducted by Tertiary Infotech Academy Pte Ltd. It carries the full detail of all 12 hands-on labs, in the order you will run them across the two days, together with the concepts each lab depends on.
+This Learner Guide accompanies the course Generative AI for Agile Project Management (C324), conducted by Tertiary Infotech Academy Pte Ltd (UEN 201200696W). It is your reference during the two training days and your working manual afterwards.
 
-The labs build a single, connected deliverable — the Tempo 2.0 Agile AI Playbook, for a fictional habit-tracking app called Tempo from the studio Cadence Labs, planning and delivering its 2.0 release. You start in Lab 1 by setting up ChatGPT, Claude and Gemini as an agile toolkit, then in every lab you take the delivery one stage further — a reusable prompt library, a responsible-AI checklist, refined user stories and acceptance criteria, a groomed and prioritised backlog, a sprint plan and release roadmap, stand-up summaries and progress tracking, a risk and dependency log, AI-assisted documentation and test scenarios, stakeholder status reports and a dashboard, a velocity analysis, and finally an AI-assisted retrospective and continuous-improvement plan. A Tempo 2.0 project brief with sample inputs is supplied in labs/reference-pack/; you may substitute your own non-confidential project wherever you prefer.
+The guide is organised into four topics that match the slide deck and the Lesson Plan exactly. Each topic opens with the teaching content — the frameworks, comparisons and models you will be assessed on — and then works through its real-world case-study activities. For every activity you will find the documented case, the workplace scenario your group works on, the full step-by-step instructions, the discussion questions, and the debrief that states what the room should conclude.
+
+> **Note:** The detailed step-by-step instructions appear in this guide and in the individual activity briefs — deliberately NOT on the slides. The slides carry the case, the scenario and the questions so that the class discusses rather than reads. Follow the steps from here.
+
 
 
 ## Course Learning Outcomes
 
-- LO1: Explain how generative AI assistants (ChatGPT, Claude, Gemini) support Agile and Scrum, and set up an AI toolkit and workspace for agile project management.
-- LO2: Write effective, structured prompts for agile tasks and build a reusable prompt library the whole team can use.
-- LO3: Apply responsible, human-in-the-loop AI practices — reviewing, fact-checking and protecting sensitive data — across agile work.
-- LO4: Draft and refine clear, INVEST-quality user stories and acceptance criteria with AI assistance.
-- LO5: Groom and prioritise a product backlog with AI using INVEST, MoSCoW and value-versus-effort thinking.
-- LO6: Plan a sprint, estimate work, and generate a release roadmap and plan with AI support.
-- LO7: Summarise stand-ups and track sprint progress with AI while keeping the team's judgement in the loop.
-- LO8: Identify risks, blockers and dependencies with AI and plan mitigations and escalations.
-- LO9: Assist documentation, communication, quality and testing across the sprint with AI.
-- LO10: Generate status reports and a delivery dashboard for different stakeholders with AI.
-- LO11: Analyse velocity and delivery metrics with AI to surface trends and honest insights.
-- LO12: Run an AI-assisted retrospective and turn its output into a concrete continuous-improvement plan.
+On completion of this course you will be able to:
+
+- LO1: Integrate design thinking methodologies and agile principles to drive organisational innovation using generative AI.
+- LO2: Synthesise stakeholder inputs to uncover end-user needs for successful innovation.
+- LO3: Lead design thinking projects using project management tools and techniques to enhance organisational performance.
+- LO4: Develop strategies for agile design thinking to enhance product and service innovation.
 
 
-## Before You Start — Preparation
+## Skills Framework Alignment
 
-**What you need**
+This course is aligned to the Skills Framework Technical Skill and Competency Design Thinking Practice (ICT-ACE-5014-1.1).
 
-- A laptop (Windows or Mac) with a modern web browser (Chrome, Edge, Safari or Firefox) and a reliable internet connection — every generative feature runs in the cloud.
-- Access to at least one, ideally all three, generative AI assistants: ChatGPT (chat.openai.com), Claude (claude.ai) and Gemini (gemini.google.com). A free account for each is enough to follow the labs; the trainer will confirm what is available.
-- A signed-in account for each assistant you will use, tested before Lab 1 with a simple 'hello' prompt so you know it responds.
-- A place to keep your work — a documents folder or note-taking app — to save each reviewed AI output and prompt as a section of your Tempo 2.0 Agile AI Playbook.
-- The supplied Tempo 2.0 project brief and sample inputs (product vision, team, raw backlog, sample stand-up notes and sprint metrics) in labs/reference-pack/ — or a few notes and sample inputs from your own non-confidential project to use instead.
+**Abilities**
 
-**Verify your setup**
+- A1 – Integrate design thinking methodologies into processes to drive innovation across the organisation
+- A2 – Develop strategies to proliferate design thinking across the organisation
+- A3 – Synthesise information from different sources and stakeholders in order to fully understand the needs of end users
+- A4 – Drive the development of new strategies to enhance products and/or services for the organisation
+- A5 – Engage stakeholders during the design thinking process to uncover the motivations behind their actions and behaviours
+- A6 – Cultivate design thinking as a viable tool and methodology to foster new innovations for the organisation
+- A7 – Lead design thinking projects across the organisation
 
-Before Lab 1, confirm you can open and sign in to at least one assistant, send a simple prompt and get a reply, and that you have the Tempo 2.0 project brief to hand. If anything is missing, tell the trainer.
+**Knowledge**
 
-```bash
-Open chat.openai.com (ChatGPT) · claude.ai (Claude) · gemini.google.com (Gemini)  ·  sign in  ·  send "Hello, are you ready to help me with agile project management?"  ·  confirm a reply
-```
-
-**Conventions used in every lab**
-
-- Placeholders such as <YOUR PROJECT>, <TEAM CAPACITY> or <PASTE NOTES> are replaced with your own values before you send a prompt.
-- Prompts to paste into ChatGPT, Claude or Gemini are shown in the 'Prompt to use' blocks — adapt the bracketed parts to your own project.
-- Where a lab says 'any assistant', use whichever of the three you prefer; a few labs ask you to compare the same prompt across two tools.
-- Every lab ends with a 'Test it' step — an explicit check that the reviewed output meets the standard before you move on.
-- Keep every reviewed output and prompt in one project folder (Tempo-2.0-Playbook) so your playbook stays together and consistent.
+- K1 – Latest trends in design thinking
+- K2 – Concept of innovation management
+- K3 – Drivers of organisational growth and success
+- K4 – Concept and principles of resource management
+- K5 – Project management tools and techniques
 
 
-## Topic 01 — Getting Started with Generative AI for Agile  (25%)
+## Before You Start — Your Course Tools
 
-Introduction to Agile, Scrum and generative AI · Setting up AI tools for agile project management · Effective prompting for agile tasks · Responsible and human-in-the-loop use of AI
-
-**Key concepts**
-
-- Agile and Scrum in one view — Agile is a way of delivering value in small, inspect-and-adapt increments; Scrum is the most common framework, with roles (Product Owner, Scrum Master, Developers), events (sprint planning, daily stand-up, review, retrospective) and artifacts (product backlog, sprint backlog, increment).
-- Where generative AI fits — a generative AI assistant is a drafting, summarising and analysis partner across the whole Scrum cycle; it speeds up the writing and thinking work (stories, plans, summaries, reports) so the team spends more time on judgement, collaboration and delivery.
-- The three assistants — ChatGPT, Claude and Gemini are general-purpose chat assistants that all take a text prompt and return a draft; they differ in interface, context length and integrations, but the prompting and review skills you learn here transfer across all three.
-- AI is a co-pilot, not the pilot — the AI drafts and suggests; the Product Owner, Scrum Master and team still own every decision, estimate and commitment. Nothing goes into the backlog, plan or report without a human reviewing it.
-- Setting up your AI workspace — you sign in to an assistant, learn to start a focused chat per task, paste in the relevant context (the project brief, backlog, notes), and keep your AI work organised alongside your agile tooling.
-- Prompting is the core skill — a good agile prompt gives the AI a role, the context, the exact task, the format you want back and any constraints; a vague ask gives a vague draft, a structured ask gives a usable one.
-- A reusable prompt library — the same agile tasks recur every sprint (write stories, groom the backlog, summarise the stand-up, draft the report), so you save your best prompts as reusable templates the whole team can run.
-- Human-in-the-loop review — every AI output is a first draft to be checked: is it accurate, does it fit our context, is anything invented (a 'hallucination'), is it fair and clear? You review, correct and own the result.
-- Responsible and safe use — you avoid pasting confidential customer data, credentials or personal information into a public assistant, you check the facts and figures the AI states, and you are transparent with the team about what was AI-assisted.
+Two collaborative web tools are used throughout this course. Both run in a browser, need no installation and no account, and are shared by the whole class. Bring a laptop; a phone works but is cramped for the workspace tool.
 
 
-### Lab 1 — Set Up Your AI Toolkit for Agile Project Management
+### Design Thinking Studio
 
-Learning outcome: Sign in to ChatGPT, Claude and Gemini, give the same agile task to each, compare their drafts, and set up your Tempo 2.0 workspace and the human-in-the-loop review habit that every later lab depends on.
+Design Thinking Studio is a shared five-stage workspace at https://alfredang.github.io/designthinking/. The whole class works inside one live workspace and posts notes into structured sections under each of the five design thinking stages.
 
-Goal: This lab gets you comfortable with the tools before any real planning begins. You open ChatGPT, Claude and Gemini in your browser, sign in to each, and read the supplied Tempo 2.0 project brief so you know the product you will be working on. You give all three assistants the same simple agile task, compare how they respond, and see that they work the same way from your point of view — a prompt in, a draft out. You then establish the two habits that run through the whole course: keeping an organised project folder for your playbook, and treating every AI answer as a first draft you review rather than a fact you accept. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+**How to join a workspace**
 
-**What you'll build**
+1. Open https://alfredang.github.io/designthinking/ in your browser.
+2. The trainer clicks Create New Workspace and shares the workspace code, the link, or a QR code (via the Share button).
+3. Enter the workspace code in the 'Enter workspace code' field and click Join Workspace.
+4. Enter your display name when prompted, then click Continue. Your name appears on every note you post.
+5. Use the stage stepper across the top to move between Empathize, Define, Ideate, Prototype and Test.
+6. Inside any section click Add note, then fill in the Title, the Description and an optional Category, and click Save.
 
-A working AI toolkit — ChatGPT, Claude and Gemini signed in and tested — plus a Tempo-2.0-Playbook project folder, a short written note on how the three assistants differed on the same task, and a clear grasp of the prompt-review-own workflow.   (Tools: ChatGPT (chat.openai.com), Claude (claude.ai), Gemini (gemini.google.com), the Tempo 2.0 project brief, a project folder, the prompt-review-own workflow.)
+**What is in each stage**
 
-**Step-by-step**
+| Stage | Sections available |
+|---|---|
+| 1. Empathize | User Personas · User Pain Points · Interview Notes · Observation Notes · Empathy Map (Says / Thinks / Does / Feels) |
+| 2. Define | Problem Statement (voting) · How Might We Questions (voting) · Key Insights · User Needs · Success Criteria |
+| 3. Ideate | Brainstorming Board (voting) · Crazy 8s Ideas (voting) · Solution Sketches · Idea Categories · Voting & Prioritisation |
+| 4. Prototype | Prototype Description · Screens / Wireframes · Feature List · User Flow · Assumptions · Prototype Checklist |
+| 5. Test | Test Plan · User Feedback · Test Results · Issues Found · Improvements · Final Recommendations |
 
-1. Create a folder on your machine called 'Tempo-2.0-Playbook' so every reviewed output and prompt you make across the course stays together. Open the supplied Tempo 2.0 project brief (labs/reference-pack/) and skim the product vision, the team and the sample inputs so you know what you are working on.
-2. Open all three assistants in separate browser tabs — chat.openai.com (ChatGPT), claude.ai (Claude) and gemini.google.com (Gemini) — and sign in to each. Send each a simple 'hello' to confirm it responds.
-3. Give the SAME agile task to each assistant so you can compare them. Paste the prompt below into ChatGPT, then into Claude, then into Gemini.
+> **Note:** Sections marked with voting let the group mark notes as important — use this to converge. In the Test stage, Issues Found and Improvements can be marked resolved as you work through them.
 
-   ```bash
-   You are an Agile coach. In plain language, explain to a new Scrum team the purpose of the four main Scrum events — sprint planning, the daily stand-up, the sprint review and the retrospective — in one short sentence each. Keep it under 120 words total.
-   ```
 
-4. Read the three answers side by side. Note in one or two lines where they differ — length, tone, clarity, formatting. This is your first evidence that the tool matters less than the prompt and your review.
-5. Now feel how context changes the answer. Copy the product-vision paragraph from the Tempo 2.0 brief and paste it into any one assistant with the prompt below.
+### Padlet Classroom Board
 
-   ```bash
-   Here is the product vision for our app, Tempo:
-<PASTE THE TEMPO 2.0 PRODUCT VISION HERE>
-In three bullet points, summarise what this product is for and who it serves, using only the information above. Do not invent features that are not stated.
-   ```
+The Padlet Classroom Board at https://alfredang.github.io/padlet/ is an online classroom board for posting group output, comparing it across groups and voting on the strongest thinking.
 
-6. Deliberately test the review habit: check the assistant's summary against the brief. Did it stick to what the brief actually says, or did it add something that is not there? Note anything invented — this is exactly the human-in-the-loop check you will do on every output.
-7. Write a short 'how I'll work' note for yourself and save it in your Tempo-2.0-Playbook folder: which assistant(s) you will use, and the three-step rule you will follow every time — prompt, review, own. This note opens your playbook.
+**How to join a classroom**
 
-**Test it**
+1. Open https://alfredang.github.io/padlet/ in your browser.
+2. The trainer creates the classroom and shares the classroom code.
+3. Click Join an existing classroom, enter the classroom code and click Join classroom.
+4. Enter your display name so your posts are attributed to you.
+5. Find the section for the current activity, then click + / Add post here.
+6. Give the post a Subject and body. You may attach an image, a link, a YouTube video or a PDF.
+7. Use Like on the strongest posts from other groups, and Comments to challenge their reasoning.
 
-You have ChatGPT, Claude and Gemini signed in and responding, a Tempo-2.0-Playbook folder created, a written note comparing how the three tools answered the same agile task, and you have practised the prompt-review-own workflow — including catching whether a summary stayed true to the brief.
+> **Note:** Sort the board by Newest first, Oldest first or Most liked. The trainer may pin an Announcement to the top of the board with the current task.
 
-> **Note:** Full commands and screenshots are in labs/lab-01-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
+
+### Your Generative AI Assistant
+
+You will use a generative AI assistant (ChatGPT, Microsoft Copilot or an equivalent) in most activities. Any current model is fine. Three working rules apply throughout this course:
+
+- Generate manually FIRST, then use AI to extend. Running AI first anchors the whole group to its framing and measurably narrows the range of ideas in the room.
+- Treat every AI output as a hypothesis, never as evidence. Label AI-generated personas, insights and metrics as unvalidated until real-world evidence confirms them.
+- Never paste confidential, personal or client-identifying data into a public AI tool. Use anonymised or synthetic details in class.
 
 ---
 
 
-### Lab 2 — Write Effective Prompts and Build an Agile Prompt Library
+## Topic 1 — Foundations of Design Thinking, Agile, and Generative AI
 
-Learning outcome: Learn the role-context-task-format-constraints structure for agile prompts, refine a weak prompt into a strong one, and save a reusable agile prompt library you will use for the rest of the course.
-
-Goal: A good AI draft starts with a good prompt, not a lucky one. In this lab you learn a simple, reliable structure for agile prompts — give the AI a role, the context, the exact task, the output format you want, and any constraints — and you see how each part changes the result. You take a deliberately weak, vague prompt and improve it one part at a time until it produces a genuinely usable draft. Then, because the same agile tasks recur every sprint, you save your best prompts as a reusable prompt library with clearly marked slots, so you (and your team) never start from a blank box again. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
-
-**What you'll build**
-
-A reusable agile prompt library saved in your project folder — structured, slot-based prompt templates for the recurring agile tasks (user stories, backlog grooming, stand-up summary, status report, retrospective) — plus a before/after example proving a structured prompt beats a vague one.   (Tools: Any assistant (ChatGPT, Claude or Gemini), the role-context-task-format-constraints prompt structure, single-change prompt edits, a saved slot-based prompt library.)
-
-**Step-by-step**
-
-1. Start with a deliberately weak prompt so you can feel the difference. In any assistant, send: 'Write some user stories for a habit app.' Read the vague, generic result and keep it to compare against.
-2. Now rebuild the same request with structure. Send the prompt below and compare the result with the weak one — notice how much more usable it is.
-
-   ```bash
-   You are an experienced Agile Product Owner. Context: we are building Tempo 2.0, a habit-tracking app; a key new feature is shared team habits, where a group tracks a habit together. Task: write three user stories for this feature. Format: use the form 'As a <role>, I want <goal>, so that <benefit>', one per line. Constraints: keep each to one sentence, make them independent, and focus on the user's value, not the technical solution.
-   ```
-
-3. Change exactly one part and regenerate, so you can attribute the change. First change the ROLE (for example to 'a strict Agile coach who insists on INVEST'); read how the emphasis shifts.
-4. Now change only the FORMAT — ask for the same three stories as a markdown table with columns Role, Goal, Benefit, Priority. Notice format is independent of content.
-
-   ```bash
-   Re-present exactly those three user stories as a markdown table with the columns: Role | Goal | Benefit | Priority (High/Medium/Low). Do not change the stories' wording.
-   ```
-
-5. Now change only the CONSTRAINTS — add 'each story must be small enough to finish in one sprint, and add one acceptance criterion per story'. See how constraints tighten quality without you rewriting the whole prompt.
-6. Extract the pattern into a reusable template. Ask the assistant to help, then save the result. Paste the prompt below.
-
-   ```bash
-   Turn the effective prompt we just refined into a reusable template with clearly marked slots: [ROLE], [CONTEXT], [TASK], [FORMAT], [CONSTRAINTS]. Then create four more templates in the same slot style for these recurring agile tasks: grooming a backlog, summarising a daily stand-up from raw notes, writing a sprint status report for stakeholders, and running a retrospective. Present all five as a clean, copy-ready prompt library.
-   ```
-
-7. Review and save. Read each template critically — would it work on a real task? Fix anything weak, then save the five-template set as 'agile-prompt-library' in your Tempo-2.0-Playbook folder. Keep the weak-vs-structured example next to it as a reminder of why structure matters.
-
-**Test it**
-
-You have a saved agile prompt library of at least five slot-based templates (user stories, backlog grooming, stand-up summary, status report, retrospective) built on the role-context-task-format-constraints structure, and a before/after example that shows a structured prompt clearly beats a vague one.
-
-> **Note:** Full commands and screenshots are in labs/lab-02-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+Topic weighting: 25%. This topic establishes the vocabulary for the whole course: what design thinking actually is, how it differs from lean and agile, and where generative AI genuinely helps rather than merely appearing to.
 
 
-### Lab 3 — Apply Responsible, Human-in-the-Loop AI Practices
+### What Design Thinking Is
 
-Learning outcome: Build a responsible-AI checklist for agile work and apply it — catching an invented 'fact', rewriting a prompt to protect sensitive data, and confirming a draft is fair, clear and owned by a human.
+Design Thinking is a solution-based approach to problem solving that is especially useful for problems that are ill-defined, ambiguous or simply unknown. It works by understanding the human needs involved, re-framing the problem in human-centred terms, generating many ideas in structured ideation sessions, and adopting a hands-on approach through prototyping and testing.
 
-Goal: Using AI in a real delivery brings real responsibilities. In this lab you build and apply the human-in-the-loop discipline that keeps AI use safe. You deliberately prompt an assistant into stating something confidently wrong (a 'hallucination') and practise catching and correcting it. You learn what never to paste into a public assistant — customer data, personal information, credentials, proprietary code — and rewrite a risky prompt to remove it. You check a draft for fairness and clarity, and you decide how your team will be transparent about what was AI-assisted. The output is a short, reusable responsible-AI checklist you keep visible for the rest of the course. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+The central discipline is resisting your first plausible answer. When was the last time your first idea was your best idea? Everyone designs, consciously or not — if you are solving a problem, you are designing a solution. Design thinking is a mindset that helps you do it better.
 
-**What you'll build**
+**The abilities that make a designer**
 
-A one-page responsible-AI checklist for agile work (fact-check, protect data, be fair and clear, disclose AI use, keep a human owner) plus worked examples — a caught-and-corrected hallucination and a risky prompt rewritten to remove sensitive data.   (Tools: Any assistant, fact-checking against the brief, data-safety rewriting, a fairness and clarity review, a transparency and ownership decision.)
+Carissa Carter, head of teaching at the Stanford d.school, describes the abilities that distinguish strong designers:
 
-**Step-by-step**
-
-1. See a hallucination for yourself. Ask an assistant a specific, checkable question it is likely to get wrong or invent, for example the prompt below. Read how confident the answer sounds.
-
-   ```bash
-   According to the official Scrum Guide, exactly how many minutes long must a daily stand-up be, and on which page is that stated? Give the exact page number.
-   ```
-
-2. Fact-check it. The Scrum Guide time-boxes the daily stand-up to 15 minutes but does not mandate an exact length by page number — so any confident 'page number' is invented. Note this as your first checklist rule: verify specific facts, figures and citations before you trust them.
-3. Practise data safety. Look at this risky prompt a busy Scrum Master might send: 'Here is our customer list with emails and phone numbers <pasted>, and our AWS admin password is <pasted> — write release notes.' Identify everything in it that must never go into a public assistant.
-4. Rewrite it safely. Redraft the same request so it gets the job done with no sensitive data, using the prompt below as your safe version.
-
-   ```bash
-   You are a release manager. Write concise release notes for a mobile app update that adds shared team habits, a smarter reminder engine and an insights dashboard, and fixes several reminder-reliability bugs. Use only this description — do not ask for or include any customer data, personal information or credentials. Format: a short 'New', 'Improved' and 'Fixed' list.
-   ```
-
-5. Check for fairness and clarity. Take any draft the AI has written for you so far and ask it to review itself with the prompt below; then read its answer critically — you, not the AI, are the judge.
-
-   ```bash
-   Review the text above for clarity and fairness: is anything ambiguous, biased, exclusionary or likely to be misread by a non-technical stakeholder? List specific issues and suggest plain, neutral rewrites. Do not change the meaning.
-   ```
-
-6. Decide on transparency and ownership. Write one line on how your team will note when something was AI-assisted (for example a small 'AI-assisted, reviewed by <name>' tag on drafts), and confirm the rule that a named human owns and approves every output before it is used.
-7. Assemble your responsible-AI checklist. Combine what you practised into a short, reusable checklist — fact-check specifics; never paste sensitive data; review for fairness and clarity; disclose AI assistance; a human owns and approves — and save it as 'responsible-ai-checklist' in your Tempo-2.0-Playbook. Keep it open beside you for every remaining lab.
-
-**Test it**
-
-You have a saved one-page responsible-AI checklist, and you have applied it in practice: you caught and corrected an invented 'fact', you identified and removed sensitive data by rewriting a risky prompt safely, and you reviewed a draft for fairness, clarity, disclosure and human ownership.
-
-> **Note:** Full commands and screenshots are in labs/lab-03-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+- **Dealing with ambiguity** — Staying productive when the problem itself is still unclear. This is the defining skill of the discipline and the hardest to fake.
+- **Empathetic learning** — Understanding a user's world from inside their experience, rather than from a survey summary or a dashboard.
+- **Synthesis** — Turning a large mass of qualitative evidence into a small number of insights you can actually design against.
+- **Experimentation** — Treating every belief as testable, and designing the cheapest test that could disprove it.
 
 
-## Topic 02 — AI for Backlogs, User Stories and Planning  (25%)
+### The Three Mindsets — Design Thinking, Lean and Agile
 
-Drafting and refining user stories and acceptance criteria · Grooming and prioritising the backlog with AI · Sprint planning and estimation support · Generating roadmaps and release plans
+![The three mindsets of product development and where they overlap.](.claude/skills/courseware-build/assets/img/three-mindsets.png)
 
-**Key concepts**
+*The three mindsets of product development and where they overlap.*
 
-- User stories with AI — the AI turns a rough feature idea into a well-formed user story in the 'As a <role>, I want <goal>, so that <benefit>' form, and you refine it so it reflects the real user and real value.
-- INVEST-quality stories — good stories are Independent, Negotiable, Valuable, Estimable, Small and Testable; you prompt the AI to draft against INVEST and to flag stories that are too big or vague to estimate.
-- Acceptance criteria — the AI drafts clear, testable acceptance criteria (often in Given/When/Then form) that define 'done' for a story, which you then check for gaps, edge cases and testability.
-- Grooming the backlog — the AI helps refine, split, merge and de-duplicate backlog items, clarify wording and add missing detail, turning a messy raw list into a groomed, ready backlog.
-- Prioritising with AI — the AI applies frameworks such as MoSCoW (Must / Should / Could / Won't) and value-versus-effort to suggest a priority order and explain its reasoning; the Product Owner makes the final call.
-- Sprint planning support — given the team's capacity and the top of the backlog, the AI proposes a realistic sprint goal and a candidate sprint backlog, and helps break stories into tasks.
-- Estimation support — the AI suggests relative story-point estimates and surfaces the assumptions and risks behind each, giving the team a sensible starting point for planning-poker discussion rather than a number to accept blindly.
-- Roadmaps and release plans — the AI drafts a multi-sprint roadmap and a release plan from the prioritised backlog, grouping work into themes and releases and making dependencies and milestones explicit.
-- Keeping ownership — AI accelerates the drafting, but the team still negotiates scope, commits to the sprint and owns the estimates; the AI's numbers are inputs to the conversation, never the decision.
+The clearest formulation of how these three fit together comes from Thoughtworks:
+
+> Design Thinking is how we explore and solve problems. Lean is our framework for testing our beliefs and learning our way to the right outcomes. Agile is how we adapt to changing conditions with software.
+
+Compressed for memory: Design Thinking finds the RIGHT PROBLEM. Lean validates the RIGHT SOLUTION. Agile makes sure you BUILD IT RIGHT. They are completing, not competing — the question is never 'Lean or Agile?', it is 'and'.
+
+|  | Design Thinking | Lean Startup | Agile |
+|---|---|---|---|
+| Primary focus | Understanding users deeply | Validating ideas efficiently | Iterative delivery and adaptation |
+| The question it answers | How should we think about this problem? | How do we validate this solution efficiently? | How do we build, scale and improve it? |
+| Origin | Human-centred design practice | Toyota lean manufacturing | A counterpoint to Waterfall |
+| Core move | Reframe the problem through empathy | Build an MVP; let the customer determine value | Ship increments in short sprints |
+| Timeframe | Flexible — one day to one month | Rapid, minimal validation cycles | Sprint-based and continuous |
+| Fails when | It never reaches delivery | It validates a problem nobody has | It builds the wrong thing efficiently |
+
+> **Note:** A critical caution from the same source: all three mindsets are commonly corrupted by being codified into rituals and certifications and rolled out mindlessly. They are mindsets, not processes.
+
+**Problem finding versus problem solving**
+
+The crispest two-word contrast: Design Thinking is problem FINDING; Agile is problem SOLVING. Agile focuses on solving a predefined issue efficiently, and can become dysfunctional when user engagement is minimal. Design Thinking focuses on selecting the right issue to address in the first place, and only begins once you understand user needs.
+
+PMI puts the same point in terms of destination: agile's iterative approach lets teams react to change and deliver finished products faster — but this is only valuable if it is the right destination to begin with.
 
 
-### Lab 4 — Draft and Refine User Stories and Acceptance Criteria
+### The Double Diamond
 
-Learning outcome: Turn raw Tempo 2.0 feature ideas into INVEST-quality user stories with AI, then draft and refine testable acceptance criteria, reviewing every one so it reflects the real user and real value.
+![The Double Diamond — the problem space and the solution space, each with a diverge and a converge phase.](.claude/skills/courseware-build/assets/img/double-diamond.png)
 
-Goal: Planning starts with well-formed stories. In this lab you take the rough feature ideas from the Tempo 2.0 brief and use an assistant to draft them as proper user stories in the 'As a <role>, I want <goal>, so that <benefit>' form. You prompt the AI to check its own stories against INVEST and to flag any that are too big or vague to estimate, then split those with its help. For your key stories you draft acceptance criteria in Given/When/Then form and review them for gaps, edge cases and testability. Throughout, you apply your responsible-AI checklist — the AI drafts, you decide what is right for the real user. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+*The Double Diamond — the problem space and the solution space, each with a diverge and a converge phase.*
 
-**What you'll build**
+The Double Diamond describes innovation as two linked diamonds, each alternating divergent and convergent thinking.
 
-A set of INVEST-checked Tempo 2.0 user stories (with over-large ones split) and, for the key stories, testable Given/When/Then acceptance criteria — all reviewed by you and saved as the stories section of your playbook.   (Tools: Any assistant, the user-story template from your prompt library, the INVEST checklist, story splitting, Given/When/Then acceptance criteria.)
+- **Diamond 1 — the problem space** — Diverge by zooming out to understand the customer, their context and their needs. Converge by formulating a clear problem statement. This diamond answers: are we solving the right problem?
+- **Diamond 2 — the solution space** — Diverge by ideating and testing multiple solutions. Converge by selecting the optimal one. This diamond answers: are we building the right solution?
+- **Then agile delivery** — Sprints answer the third question: are we building it right?
 
-**Step-by-step**
+> **Note:** The first diamond is the one teams skip under deadline pressure. Skipping it does not save time — it relocates the cost to the point where the wrong thing has already been built.
 
-1. Open the Tempo 2.0 brief and copy the raw feature ideas for the 2.0 release (shared team habits, the smarter reminder engine, the insights dashboard, and the listed bug fixes). Open your agile prompt library and grab your user-story template.
-2. Draft the first batch of stories. Paste the prompt below, filling the context slot with the raw ideas.
 
-   ```bash
-   You are an experienced Agile Product Owner for Tempo, a habit-tracking app. Context: here are the raw feature ideas for our 2.0 release:
-<PASTE THE RAW FEATURE IDEAS>
-Task: write clear user stories in the form 'As a <role>, I want <goal>, so that <benefit>'. Format: group them under the three feature themes (shared team habits, smarter reminders, insights dashboard). Constraints: focus on user value, keep each story to one sentence, and cover the main users (an individual user, a team member, a team admin).
-   ```
+### The Five Stages of Design Thinking
 
-3. Quality-check against INVEST. Ask the AI to grade its own stories and flag the weak ones, using the prompt below, then read its judgement critically.
+![The five stages — a loop you re-enter, not a waterfall you complete once.](.claude/skills/courseware-build/assets/img/dt-five-stages.png)
 
-   ```bash
-   Review each story above against INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable). Present a table: Story | INVEST issues | Suggested fix. Be strict — flag any story that is too big or vague to estimate in one sprint.
-   ```
+*The five stages — a loop you re-enter, not a waterfall you complete once.*
 
-4. Split the over-large stories. Take one story the AI flagged as too big and ask it to split the work into smaller, independently valuable stories.
+The five stages overlap and repeat continuously, with forward momentum on problem-solving always in play. The process is flexible and fluid by nature; a result at Test can send you straight back to Empathise.
 
-   ```bash
-   Split this user story into 2-4 smaller stories that are each independently valuable, small enough to finish in one sprint, and testable. Keep the same 'As a / I want / so that' form:
-<PASTE THE OVER-LARGE STORY>
-   ```
+**1. Empathise**
 
-5. Draft acceptance criteria for your key stories. Choose the three most important stories and generate testable criteria with the prompt below.
+Understand the experience, situation and emotions of the person you are designing for. Observe users and their behaviour in the context of their lives. Engage people in conversation and ask why. Watch and listen: ask someone to complete a task and narrate what they are doing. Where possible, immerse yourself in the physical environment to gain a deeper personal understanding.
 
-   ```bash
-   For each of the three user stories below, write acceptance criteria in Given/When/Then form that define exactly when the story is done. Include at least one edge case or error condition per story. Keep each criterion testable and unambiguous.
-<PASTE THE THREE KEY STORIES>
-   ```
+**2. Define**
 
-6. Review the acceptance criteria as a human. For each story ask: does 'done' really mean done here? Is a realistic edge case missing (offline, permissions, an empty state, a shared-habit conflict)? Add or correct criteria yourself where the AI missed something.
-7. Save the stories section of your playbook: the INVEST-checked stories grouped by theme, the split of the over-large story, and the reviewed Given/When/Then acceptance criteria for the key stories, in your Tempo-2.0-Playbook folder.
+Process and synthesise your findings to form a user Point of View that you will address. Develop an understanding of the type of person you are designing for, select a limited set of needs you think are important to fulfil, and express the insights you developed. Analyse your observations and synthesise them to define the core problem in a human-centred manner.
 
-**Test it**
+**3. Ideate**
 
-You have a reviewed set of Tempo 2.0 user stories in proper form, checked against INVEST with at least one over-large story split into smaller ones, and testable Given/When/Then acceptance criteria (including edge cases) for your key stories — all human-reviewed and saved to your playbook.
+Focus on idea generation. Translate problems into solutions. Explore a wide variety and a large quantity of ideas so you can go beyond the obvious. Combine conscious and unconscious thought with rational analysis and imagination. Leverage the group to reach new ideas and build on other people's. Critically: separate the generation of ideas from their evaluation, to give imagination a voice.
 
-> **Note:** Full commands and screenshots are in labs/lab-04-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
+**4. Prototype**
+
+Build to think. Create a simple, cheap and fast artefact that shapes the idea so you can experience and interact with it. Create something of deliberately low resolution — a physical object, a sketch, a paper screen. Quick and dirty is the point. Storyboard a scenario you can role-play so people can experience the solution.
+
+**5. Test**
+
+Ask for feedback. Let people use the prototype hands-on and listen to what they say. Let users talk and describe how they feel. Learn about the user, reframe your view and refine the prototype. Solutions are accepted, improved and re-examined, or rejected, on the basis of the users' experiences. Fail sooner rather than later.
+
+
+### Wicked Problems
+
+The term wicked problem was coined in 1973 by Horst Rittel and Melvin Webber, professors of design and urban planning at UC Berkeley. Wicked problems are abstract and difficult to define, with multiple interconnected layers — poverty, climate change, public health. Their defining property is that they have no fixed endpoint and no single correct solution, only better and worse responses.
+
+A tame problem, by contrast, has a knowable answer. Reaching for a tame method on a wicked problem is one of the most common and expensive errors in organisational innovation, and it is precisely why framing must precede solving.
+
+
+### How Generative AI Enhances the Loop
+
+![Where generative AI accelerates each stage of the design thinking loop.](.claude/skills/courseware-build/assets/img/genai-overlay.png)
+
+*Where generative AI accelerates each stage of the design thinking loop.*
+
+Generative AI compresses the expensive parts of the innovation loop. A seven-year study of design thinking by Jeanne Liedtka at the University of Virginia's Darden School found that immersion in user experience provides rich raw material for insight, but that finding patterns and making sense of the resulting mass of qualitative data is a significant challenge. That documented bottleneck — sense-making across large volumes of qualitative evidence — is exactly what generative AI relieves.
+
+| Stage | GenAI genuinely accelerates | What must stay human |
+|---|---|---|
+| Empathise | Synthesising interview transcripts and field notes at speed | Being in the room; noticing what is not said |
+| Define | Generating and stress-testing candidate reframes | Choosing which problem the organisation will own |
+| Ideate | Multiplying idea volume and range on demand | Recognising the idea that fits this context |
+| Prototype | Drafting copy, flows, screens and edge cases | Deciding what is cheap enough to learn from |
+| Test | Clustering feedback and drafting test scripts | Watching a real user hesitate, and asking why |
+
+> AI acts as an amplifier of good Agile and Design Thinking discipline rather than a substitute for it. The quality of outcomes still depends on the rigor of the underlying process and the judgment of the people running it.
+
+> **Note:** A language model generates the statistically likely, not the locally true. That is what you want for divergence, and what you must not trust for convergence.
+
+
+### Latest Trends in Innovation
+
+- **AI-assisted discovery** — Research synthesis that took a team weeks now takes hours; the bottleneck moves from analysis to judgement.
+- **Continuous discovery** — Discovery is no longer a phase that precedes delivery — it runs permanently alongside it.
+- **Cross-functional trios** — A product manager, a designer and an engineer own discovery together rather than passing artefacts down a chain.
+- **Evidence over opinion** — Decisions increasingly require a named assumption and the test that would disprove it.
+- **Responsible AI** — Provenance, bias and governance become part of the innovation process rather than a legal afterthought.
+- **Outcome over output** — Organisations shift from counting features shipped to measuring the customer value created.
 
 ---
 
 
-### Lab 5 — Groom and Prioritise the Product Backlog with AI
+## Topic 2 — Problem Framing and Ideation: Leveraging Design Thinking and Generative AI
 
-Learning outcome: Use AI to groom a messy raw backlog — clarifying, splitting, merging and de-duplicating items — then prioritise it with MoSCoW and value-versus-effort, keeping the final ordering a human decision.
-
-Goal: A raw idea list is not a backlog. In this lab you turn the Tempo 2.0 stories and remaining raw items into a groomed, ordered product backlog. You use an assistant to clean the list — clarify vague wording, split items that are really several, merge duplicates, and fill obvious gaps — so every item is ready. Then you prioritise: the AI applies MoSCoW (Must / Should / Could / Won't) and a value-versus-effort view and explains its reasoning, and you, in the Product Owner's seat, make the final call and adjust the order. The result is a ready, prioritised backlog you can plan a sprint from. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
-
-**What you'll build**
-
-A groomed, prioritised Tempo 2.0 product backlog — cleaned and de-duplicated, each item tagged with a MoSCoW category and a value/effort view, ordered for planning, with your Product-Owner adjustments applied.   (Tools: Any assistant, the backlog-grooming template from your prompt library, MoSCoW prioritisation, value-versus-effort analysis, Product-Owner review.)
-
-**Step-by-step**
-
-1. Assemble your raw backlog: your Lab 4 stories plus any remaining raw ideas and bug fixes from the Tempo 2.0 brief that are not yet stories. Paste them into any assistant as one messy list so you can groom it.
-2. Groom the list. Use the prompt below to clarify, split, merge and de-duplicate.
-
-   ```bash
-   You are helping a Product Owner groom a product backlog. Here is our raw Tempo 2.0 backlog:
-<PASTE THE RAW BACKLOG>
-Task: return a cleaned, ready backlog. Clarify any vague item, split any item that is really several, merge duplicates, and flag anything missing important detail. Present it as a numbered list with a one-line description per item. Do not invent new features that are not implied by the list.
-   ```
-
-3. Review the grooming. Check the AI did not quietly drop or invent items. Confirm each split and merge makes sense to you; undo any you disagree with. Grooming is a judgement call, not an automatic one.
-4. Prioritise with MoSCoW. Ask the AI to categorise and explain, using the prompt below.
-
-   ```bash
-   Prioritise the groomed backlog using MoSCoW (Must have, Should have, Could have, Won't have this release). For the Tempo 2.0 release, our goal is to ship shared team habits and reliable reminders first. Present a table: Item | MoSCoW | One-line reason. Then list the 'Must have' items in the order you would build them and explain the ordering.
-   ```
-
-5. Add a value-versus-effort view. Ask the AI to estimate relative value and effort so you can spot quick wins and expensive extras.
-
-   ```bash
-   For each backlog item, add a rough Value (High/Medium/Low) and Effort (High/Medium/Low) rating and mark any that are High-value / Low-effort as 'quick win'. Present as a table and briefly note which items look like poor value for their effort.
-   ```
-
-6. Make the Product Owner's call. Reconcile MoSCoW and value/effort into one ordered backlog. Move at least two items yourself against the AI's suggestion where you disagree, and write one line explaining each override — this is the human decision the AI supports but does not make.
-7. Save the prioritised backlog section of your playbook: the groomed items, their MoSCoW and value/effort tags, the final ordering, and your override notes, in your Tempo-2.0-Playbook folder.
-
-**Test it**
-
-You have a groomed, de-duplicated Tempo 2.0 backlog with every item tagged by MoSCoW and value/effort, ordered ready for planning, and you have made at least two Product-Owner overrides against the AI's suggestion with reasons — a backlog you own, not one the AI decided.
-
-> **Note:** Full commands and screenshots are in labs/lab-05-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+Topic weighting: 25%. This topic covers the highest-leverage move in the whole discipline — turning a technical brief into a human problem — and then the disciplined generation and convergence of ideas against it.
 
 
-### Lab 6 — Plan the Sprint, Estimate, and Build the Release Roadmap
+### Framing the Design Challenge
 
-Learning outcome: Use AI to propose a sprint goal and candidate sprint backlog from the team's capacity, get relative estimates with their assumptions surfaced, and draft a multi-sprint roadmap and release plan — with the team owning every commitment.
+Human-centred design, as IDEO describes it, is an approach to problem-solving based on techniques that communicate with, interact with, empathise with and stimulate the people involved, in order to understand their needs, desires and experiences.
 
-Goal: With a prioritised backlog you can plan. In this lab you use an assistant to support sprint planning end to end. Given the team's capacity and the top of the backlog, the AI proposes a realistic sprint goal and a candidate sprint backlog and helps break the top stories into tasks. It suggests relative story-point estimates and — crucially — surfaces the assumptions and risks behind each, giving the team a starting point for a planning-poker conversation rather than numbers to accept. Finally it drafts a multi-sprint roadmap and a release plan from the backlog, making themes, dependencies and milestones explicit. You keep ownership throughout: the AI's numbers are inputs, the team's commitment is the decision. This lab completes Day 1. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+Framing is about turning problems into opportunities and organising the possible solutions. At moments of ambiguity it clarifies where you should push your design. Follow six steps:
 
-**What you'll build**
+1. Write your design challenge — one short, memorable sentence conveying the problem you want to solve. For example: make families spend more time together.
+2. Frame it as a question, specifically a 'How Might We' question. For example: How might we help families spend more time together?
+3. Define the impact you would like to have in light of that challenge.
+4. Think about possible solutions to the problem — without committing to any of them yet.
+5. Write down the context and the constraints that surround the original question.
+6. Look back at your How Might We question and revise it. It is very common to adapt it as you dig deeper.
 
-A first-sprint plan for Tempo 2.0 (a sprint goal, a candidate sprint backlog broken into tasks), relative estimates with their assumptions and risks surfaced, and a multi-sprint roadmap and release plan — all reviewed and adjusted by you.   (Tools: Any assistant, the prioritised backlog from Lab 5, team capacity, sprint-goal and task breakdown, story-point estimation support, roadmap and release planning.)
+**The altitude test**
 
-**Step-by-step**
+The most common mistake is a How Might We question that is either too broad or too narrow.
 
-1. Gather your inputs: your prioritised backlog from Lab 5 and the team's capacity from the brief (team size, sprint length, and any planned leave). Note the sprint length is two weeks.
-2. Propose a sprint goal and candidate sprint backlog. Paste the prompt below with your inputs.
-
-   ```bash
-   You are an Agile delivery assistant. Context: here is our prioritised Tempo 2.0 backlog:
-<PASTE THE PRIORITISED BACKLOG>
-Our team capacity for a 2-week sprint is <TEAM CAPACITY>. Task: propose one clear sprint goal for Sprint 1 and a candidate sprint backlog of items that fit the capacity and serve that goal. Format: state the sprint goal in one sentence, then list the selected items. Constraints: prefer the 'Must have' items and a coherent goal over cramming in unrelated work.
-   ```
-
-3. Break the top stories into tasks. Ask the AI to decompose the candidate sprint backlog into concrete tasks.
-
-   ```bash
-   Break each item in the candidate sprint backlog into the concrete tasks needed to deliver it (design, build, test, review, etc.). Present as a checklist grouped by story. Keep tasks small enough to finish in a day or two.
-   ```
-
-4. Get estimation support with assumptions surfaced. Use the prompt below — the assumptions matter more than the numbers.
-
-   ```bash
-   Suggest a relative story-point estimate (using the sequence 1, 2, 3, 5, 8, 13) for each item in the candidate sprint backlog. For every estimate, state the key assumption and the main risk behind it in one line. Make clear these are a starting point for the team's planning-poker discussion, not final numbers.
-   ```
-
-5. Run the human estimation check. Pick two items where you disagree with the AI's story points and write your own estimate and reasoning. This mirrors the planning-poker conversation the team would have — the AI opens it, the team settles it.
-6. Draft the roadmap and release plan. Generate a higher-level view with the prompt below.
-
-   ```bash
-   From the full prioritised backlog, draft a multi-sprint roadmap for Tempo 2.0 across the next 4 sprints, grouping work into themes (shared team habits, smarter reminders, insights dashboard, fixes and polish). Then draft a release plan showing which themes ship in which release, and list the key dependencies and milestones. Present the roadmap as a table (Sprint | Theme | Main items) and the release plan as a short bulleted plan. State any assumption you make.
-   ```
-
-7. Review and save. Sanity-check the roadmap against reality — is the sequence sensible, are dependencies right, is anything over-committed? Adjust it yourself, then save the sprint plan, estimates and roadmap as the planning section of your Tempo-2.0-Playbook. Day 1 is complete: you have a toolkit, a prioritised backlog and a plan.
-
-**Test it**
-
-You have a reviewed Sprint 1 plan (a one-sentence sprint goal and a capacity-fit sprint backlog broken into tasks), story-point estimates with their assumptions and risks surfaced and at least two you re-estimated yourself, and a multi-sprint roadmap and release plan with dependencies and milestones — all saved to your playbook.
-
-> **Note:** Full commands and screenshots are in labs/lab-06-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+- TOO NARROW: you can immediately name only one obvious solution — the answer is hiding inside the question. 'How might we send an SMS reminder?' is a solution wearing a question mark.
+- TOO BROAD: you cannot picture any concrete answer at all. 'How might we improve healthcare?' invites nothing actionable.
+- JUST RIGHT: many different answers are imaginable, and you could test each of them. 'How might we make a first screening feel safe rather than exposing?'
 
 
-## Topic 03 — AI for Sprints, Standups and Delivery  (25%)
+### Problem Statement, Point of View and How Might We
 
-Summarising stand-ups and tracking progress · Identifying risks, blockers and dependencies with AI · Assisting documentation and communication · Supporting quality, testing and delivery
+| Artefact | What it is | Example |
+|---|---|---|
+| Problem statement | A neutral description of what is wrong | Elderly patients miss their screening appointments. |
+| Point of View (POV) | [User] needs [need] because [insight] | Mdm Tan needs to feel safe asking questions because she fears being judged for not understanding. |
+| How Might We (HMW) | An invitation to generate solutions | How might we make a first screening feel safe rather than exposing? |
+| The failure mode | A solution disguised as a problem | 'We need an SMS reminder system.' That is an answer, not a problem. |
 
-**Key concepts**
-
-- Summarising stand-ups — the AI turns raw daily-stand-up notes into a clear summary of what was done, what is planned and what is blocked, so the team and stakeholders get a consistent update without extra writing.
-- Tracking progress — from stand-up notes and board status, the AI helps describe sprint progress against the goal, highlight what has moved and what is stuck, and draft a plain-language burndown narrative.
-- Surfacing risks and blockers — the AI reads the team's notes and backlog and flags likely risks, blockers and impediments early, so the Scrum Master can act before they derail the sprint.
-- Mapping dependencies — the AI identifies dependencies between stories, teams and external parties, and helps sequence work so blocked items are unblocked in the right order.
-- Mitigation and escalation — for each risk or blocker the AI suggests mitigation options and a clear escalation path, which the Scrum Master reviews and turns into real actions and owners.
-- Assisting documentation — the AI drafts the routine sprint documentation (definition of done notes, decision logs, release notes, meeting minutes) so it is written consistently and kept up to date with far less effort.
-- Assisting communication — the AI tailors the same update for different audiences — a technical note for the team, a plain summary for stakeholders, a short message for leadership — keeping tone and detail appropriate to each.
-- Supporting quality and testing — the AI drafts test scenarios and checklists from acceptance criteria, suggests edge cases, and helps review whether a story truly meets its definition of done.
-- Human judgement in delivery — the AI drafts and flags, but the Scrum Master and team validate every risk, dependency and test; the AI widens what you notice, it does not replace the team's call.
+The Point of View is where raw research becomes a designable problem. Skip it and your How Might We question floats free of evidence — it will sound reasonable and lead nowhere.
 
 
-### Lab 7 — Summarise Stand-ups and Track Sprint Progress
+### The Problem-Assumption Model
 
-Learning outcome: Turn raw daily stand-up notes into a clear, consistent summary with AI, then track progress against the sprint goal and draft a plain-language burndown narrative — keeping the team's read of reality in the loop.
+![The Problem-Assumption Model (Schneider & O'Reilly) — the bridge from Design Thinking into Lean validation.](.claude/skills/courseware-build/assets/img/problem-assumption.png)
 
-Goal: Once the sprint is running, a lot of the Scrum Master's time goes into writing updates. In this lab you hand that drafting to an assistant. You take the supplied raw daily stand-up notes for Tempo 2.0 — terse, messy, in everyone's own words — and prompt the AI to turn them into a clean summary of what was done, what is planned and what is blocked. You then track progress against the sprint goal: you ask the AI to describe what has moved and what is stuck, and to write a plain-language burndown narrative from the remaining work. You review every summary against what you actually know, because the AI can only work from the notes it is given. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+*The Problem-Assumption Model (Schneider & O'Reilly) — the bridge from Design Thinking into Lean validation.*
 
-**What you'll build**
+The Problem-Assumption Model, created by Jonny Schneider and Barry O'Reilly, is a four-question worksheet that converts a belief into a test:
 
-A clean daily stand-up summary generated from raw notes, a progress-against-goal update, and a plain-language burndown narrative for the Tempo 2.0 sprint — all reviewed and saved as the tracking section of your playbook.   (Tools: Any assistant, the stand-up-summary template from your prompt library, the raw stand-up notes, progress-against-goal tracking, a burndown narrative.)
+1. What's the problem?
+2. How might we solve it?
+3. What assumptions have we made?
+4. How will we test our assumptions?
 
-**Step-by-step**
+It rests on a three-step learning discipline: define your beliefs and assumptions so that they can be tested; decide the most important thing to learn; then design the experiments that will deliver that learning.
 
-1. Open the supplied raw daily stand-up notes for the Tempo 2.0 sprint (labs/reference-pack/) — several days of terse, informal updates from the team. Grab your stand-up-summary template from your prompt library.
-2. Summarise one day's stand-up. Paste the prompt below with a single day's raw notes.
+> **Note:** Every assumption you cannot test is a risk you have chosen not to see.
 
-   ```bash
-   You are a Scrum Master assistant. Here are today's raw daily stand-up notes for our Tempo 2.0 sprint:
-<PASTE ONE DAY'S RAW NOTES>
-Task: summarise them clearly under three headings — Done since yesterday, Planned today, Blockers. Format: short bullet points. Constraints: use only what the notes say, keep each person's items attributed, and list any blocker separately so nothing is buried.
-   ```
 
-3. Review the summary against reality. Check it captured every blocker and did not invent progress. If a note was ambiguous, decide what it really meant — the AI cannot know, you can.
-4. Track progress against the sprint goal. Feed several days of notes and the sprint goal together with the prompt below.
+### Empathy Maps
 
-   ```bash
-   Here is our Sprint 1 goal:
-<PASTE THE SPRINT GOAL>
-and here are the stand-up summaries for the last few days:
-<PASTE THE DAILY SUMMARIES>
-Task: describe our progress toward the sprint goal — what has clearly moved forward, what is stuck, and whether the goal still looks achievable this sprint. Be honest and specific; do not sugar-coat. Flag anything that looks at risk.
-   ```
+![The empathy map — four quadrants plus pains and gains.](.claude/skills/courseware-build/assets/img/empathy-map.png)
 
-5. Draft a burndown narrative. Ask the AI to describe the remaining work in plain language, using the prompt below.
+*The empathy map — four quadrants plus pains and gains.*
 
-   ```bash
-   Given that the sprint started with <TOTAL STORY POINTS> points and roughly <REMAINING POINTS> remain with <DAYS LEFT> days left, write a short plain-language 'burndown' narrative a non-technical stakeholder could understand: are we ahead, on track or behind, and what would need to happen to finish on plan? State the assumption behind your read.
-   ```
+An empathy map captures four things about a user, and two more at the base:
 
-6. Apply your judgement. Compare the AI's 'on track / behind' read with your own sense of the sprint. Where they differ, write the truer version yourself. A burndown narrative is only useful if it is honest.
-7. Save the tracking section of your playbook: the daily stand-up summary, the progress-against-goal update and the reviewed burndown narrative, in your Tempo-2.0-Playbook folder.
+- **Says** — Direct quotes — what the user says out loud. Observable and quotable.
+- **Thinks** — What the user believes but does not say out loud. This is inference; label it as such.
+- **Does** — Observable behaviour, either in general or in response to a specific trigger.
+- **Feels** — The user's emotional state — for example, 'is confused by the navigation and blames themselves'.
+- **Pains** — Obstacles and frustrations worth considering — unfamiliarity with technology, a short attention span, fear of a bad result.
+- **Gains** — What the user hopes to accomplish, and what success looks like in their own terms.
 
-**Test it**
+> **Note:** The most valuable thing on an empathy map is a contradiction between what the user SAYS and what they DO. That gap is almost always where the real insight lives.
 
-You have turned raw stand-up notes into a clean, attributed summary under Done/Planned/Blockers, produced an honest progress-against-goal update and a plain-language burndown narrative for the Tempo 2.0 sprint, and reviewed each against what you actually know — all saved to your playbook.
+**Common empathy methods**
 
-> **Note:** Full commands and screenshots are in labs/lab-07-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
+- **Interviews** — Gathering in-depth insight through direct conversation. Ask why repeatedly.
+- **Observation** — Watching the task performed in its real context, without intervening.
+- **Questionnaires** — Collecting structured data from a larger audience — breadth, not depth.
+- **Focus groups** — Facilitating dynamic group discussion to surface shared and contested views.
+- **Workshop sessions** — Collaborative problem-solving and idea generation with the users themselves.
+
+
+### Persona Mapping
+
+User personas are representations of your target customers, built by researching and outlining your ideal customer's goals, pain points, behaviours and demographic information.
+
+- Create three to five detailed personas to start — enough to show meaningful variation, few enough for the team to hold in mind.
+- Ground every claim. Each goal, pain and behaviour should trace back to something a real person said or did.
+- Include the awkward persona. The user who does not fit the happy path is usually where your design breaks.
+- Keep layouts consistent between personas and find a common metric to track across them, so they can be compared.
+- Use icons and visuals to make the data memorable, and present all personas on one page for easy comparison.
+- Label AI-generated personas as hypotheses. An AI persona is a compression of what the internet says, not evidence about your users.
+- Retire personas honestly. A persona contradicted by evidence must be changed, not defended.
+
+
+### Ideation Techniques
+
+- **Brainstorming** — Group generation under explicit rules — defer judgement, encourage wild ideas, build on the ideas of others, go for quantity, stay focused, one conversation at a time, be visual.
+- **Brainwriting** — Silent written generation before any discussion, which prevents the loudest voice in the room from anchoring everybody else.
+- **Crazy 8s** — Eight rapid variations in eight minutes. The speed is the mechanism: it defeats the internal critic.
+- **Worst Possible Idea** — Deliberately generate terrible ideas to break the fear of contributing, then invert the best of the worst.
+- **SCAMPER** — Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse — a systematic prompt set for variation.
+- **AI amplification** — Generate manually first, then use GenAI to extend the set. Never the reverse.
+
+> **Note:** The one rule of ideation: separate the generation of ideas from the evaluation of ideas. Judging while generating kills the unusual ideas first — and the unusual idea is the one you came for.
+
+
+### Prototyping and Testing
+
+A prototype's job is to buy information at the lowest possible price. It is built to think, not built to ship.
+
+- Low fidelity invites honesty. A rough paper screen gets real objections; a polished mockup gets polite notes about the font.
+- Wizard of Oz: fake the mechanism with a human behind the curtain, and learn the behaviour before building anything.
+- Storyboard the experience as a strip so the team can role-play it and feel where it breaks.
+- Write the falsification criteria in advance. State what result would prove the concept wrong — otherwise you have a demonstration, not a test.
+- Use GenAI for the drafting layer: screen copy, user flows, edge cases and interview scripts. You still run the test with real people.
 
 ---
 
 
-### Lab 8 — Identify Risks, Blockers and Dependencies with AI
+## Topic 3 — Agile Development and AI for Rapid Solution Delivery
 
-Learning outcome: Use AI to read the team's notes and backlog and surface likely risks, blockers and dependencies early, map how the work depends on itself and on outside parties, and turn each into a mitigation and escalation the Scrum Master owns.
-
-Goal: A big part of the Scrum Master's value is seeing trouble early. In this lab you use an assistant to widen what you notice. You give the AI the sprint's stand-up notes, backlog and plan, and prompt it to flag likely risks, blockers and impediments — including ones the team has not named yet. You ask it to map dependencies between stories, between the team and other teams, and on external parties, and to suggest a sequence that unblocks work in the right order. For each risk or blocker it drafts mitigation options and a clear escalation path. You then review every item — the AI can over- or under-state risk — and turn the real ones into a risk log with owners and actions. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
-
-**What you'll build**
-
-A reviewed Tempo 2.0 risk, blocker and dependency log — likely risks and impediments surfaced from the notes, a dependency map with a suggested unblocking sequence, and a mitigation and escalation path with an owner for each real item.   (Tools: Any assistant, the sprint notes and backlog, risk and blocker identification, dependency mapping, mitigation and escalation planning, a Scrum-Master review.)
-
-**Step-by-step**
-
-1. Gather the evidence: your stand-up summaries and burndown from Lab 7, your sprint plan from Lab 6, and the backlog. Paste the relevant parts into any assistant.
-2. Surface risks and blockers. Use the prompt below to have the AI flag trouble early.
-
-   ```bash
-   You are an experienced Scrum Master. Based on this Tempo 2.0 sprint information:
-<PASTE STAND-UP SUMMARIES, PLAN AND BACKLOG>
-Task: identify the likely risks, blockers and impediments to finishing this sprint — including ones the team has not explicitly named. Format: a table with Risk/Blocker | Why it matters | Likelihood (H/M/L) | Impact (H/M/L). Be specific to this sprint; do not list generic project risks.
-   ```
-
-3. Map dependencies. Ask the AI to make the dependencies explicit with the prompt below.
-
-   ```bash
-   From the same sprint information, map the dependencies: which stories or tasks depend on another being done first, which depend on another team or an external party (for example an app-store review, a third-party reminder/push service, or a design sign-off), and where a dependency could block the sprint goal. Present as a list of 'A depends on B because…' statements, then suggest an order of work that unblocks things in the right sequence.
-   ```
-
-4. Sanity-check the AI's read. Go through its risks and dependencies and mark each as real, over-stated or missed. Add at least one risk or dependency you know about from context that the AI did not surface. The AI widens your view; it does not replace it.
-5. Plan mitigations and escalations. For the real risks and blockers, generate options with the prompt below.
-
-   ```bash
-   For each of these confirmed risks and blockers:
-<PASTE THE CONFIRMED LIST>
-suggest one or two practical mitigation options and a clear escalation path (who to raise it to and when). Format: Risk/Blocker | Mitigation | Escalation. Keep the actions concrete and doable within a sprint.
-   ```
-
-6. Assign owners and decide actions. As the Scrum Master, put a named owner and a next action against each real risk and blocker — the AI proposes, you commit. Remove anything that is noise so the log stays trusted and short.
-7. Save the risk, blocker and dependency log as a section of your Tempo-2.0-Playbook folder: the confirmed items with likelihood/impact, the dependency map and unblocking order, and each item's mitigation, escalation, owner and next action.
-
-**Test it**
-
-You have a reviewed Tempo 2.0 risk, blocker and dependency log — likely items surfaced early, a dependency map with a sensible unblocking order, at least one risk you added from your own knowledge, and a mitigation, escalation, owner and next action for every real item — saved to your playbook.
-
-> **Note:** Full commands and screenshots are in labs/lab-08-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+Topic weighting: 25%. This topic covers how a validated problem becomes a backlog, a sprint and a delivered increment — and where generative AI genuinely speeds that up.
 
 
-### Lab 9 — Assist Documentation, Communication and Testing
+### Being Agile versus Doing Agile
 
-Learning outcome: Use AI to draft the sprint's routine documentation, tailor the same update for different audiences, and generate test scenarios and a definition-of-done check from acceptance criteria — reviewing each so quality stays the team's call.
+|  | Doing Agile (the rituals) | Being Agile (the mindset) |
+|---|---|---|
+| Stand-up | A status report to the manager | The team re-plans its own day |
+| Backlog | A queue of requirements handed down | A living, validated set of bets |
+| Sprint review | A demo performed for stakeholders | A genuine request for disconfirming feedback |
+| Retrospective | A meeting that produces a tidy list | The team says the uncomfortable thing and changes something |
+| Change request | A disruption to be resisted | New information to be welcomed and evaluated |
+| Velocity | A productivity target imposed on the team | A planning input owned by the team |
 
-Goal: Documentation, communication and testing quietly consume a sprint. In this lab you use an assistant to lift that load across all three. For documentation, you draft release notes, a decision log entry and meeting minutes so they are written consistently and kept current. For communication, you take one sprint update and have the AI re-pitch it for three audiences — the team, stakeholders and leadership — keeping tone and detail right for each. For quality, you turn your Lab 4 acceptance criteria into test scenarios and a checklist, ask the AI to suggest edge cases, and use it to check whether a story truly meets its definition of done. You review everything: the AI drafts, the team decides what 'done' and 'good enough' mean. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
-
-**What you'll build**
-
-AI-assisted sprint documentation (release notes, a decision log entry, meeting minutes), one update re-pitched for the team, stakeholders and leadership, and test scenarios plus a definition-of-done check generated from your acceptance criteria — all reviewed and saved.   (Tools: Any assistant, documentation drafting, audience-tailored communication, test-scenario generation from acceptance criteria, a definition-of-done check.)
-
-**Step-by-step**
-
-1. Draft the routine documentation. Using what the sprint has delivered so far, generate release notes with the prompt below, then repeat the idea for a decision-log entry and short meeting minutes.
-
-   ```bash
-   You are a delivery documentation assistant. Based on the work completed in our Tempo 2.0 sprint so far:
-<PASTE THE COMPLETED ITEMS>
-Task: write concise release notes under 'New', 'Improved' and 'Fixed'. Then, separately, draft a one-paragraph decision-log entry template and a short meeting-minutes template we can reuse. Constraints: use only the information given, and mark anything uncertain as '[to confirm]' rather than inventing it.
-   ```
-
-2. Review the docs for invented detail. Check the release notes claim only what was actually done, and that every '[to confirm]' is a real gap for a human to fill. Correct anything overstated.
-3. Tailor communication for three audiences. Take one progress update and re-pitch it with the prompt below.
-
-   ```bash
-   Here is a sprint progress update:
-<PASTE YOUR PROGRESS UPDATE FROM LAB 7>
-Rewrite it for three audiences: (1) the development team — technical, detailed, honest about blockers; (2) stakeholders — plain language, focused on value and dates; (3) leadership — three lines, the headline, the risk and the ask. Keep every version truthful to the same facts; only change tone and detail.
-   ```
-
-4. Check the tone yourself. Read the leadership version as if you were the executive: is it clear, honest and free of jargon and spin? Adjust it — you own how the team communicates, not the AI.
-5. Generate test scenarios from acceptance criteria. Feed your Lab 4 acceptance criteria in with the prompt below.
-
-   ```bash
-   For the user story and acceptance criteria below:
-<PASTE A KEY STORY AND ITS GIVEN/WHEN/THEN CRITERIA>
-Task: write test scenarios that would verify each acceptance criterion, including edge cases and error conditions (offline, permissions denied, an empty state, a shared-habit conflict). Format: a numbered checklist of 'Given/When/Then' test cases. Note any acceptance criterion that is not actually testable as written.
-   ```
-
-6. Run a definition-of-done check. Ask the AI to test a story against your Definition of Done, then apply your own judgement.
-
-   ```bash
-   Here is our Definition of Done:
-<PASTE OR LIST YOUR DEFINITION OF DONE>
-and here is a story we think is finished:
-<PASTE THE STORY AND WHAT WAS DELIVERED>
-Task: check it against each Definition-of-Done item and list what is met, not met or unclear. Do not pass anything you cannot verify from the information given.
-   ```
-
-7. Save the documentation, communication and testing section of your Tempo-2.0-Playbook folder: the reviewed release notes and templates, the three audience-tailored updates, and the test scenarios and definition-of-done check.
-
-**Test it**
-
-You have AI-assisted sprint documentation with invented detail removed and gaps marked '[to confirm]', one update correctly re-pitched for the team, stakeholders and leadership, and test scenarios plus a definition-of-done check generated from your acceptance criteria and reviewed by you — all saved to your playbook.
-
-> **Note:** Full commands and screenshots are in labs/lab-09-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+> Practices without principles are a short-lived Band-Aid. And principles without practices are a fruitless exercise in philosophy.
 
 
-## Topic 04 — AI for Reporting, Retrospectives and Improvement  (25%)
+### Scrum
 
-Generating status reports and dashboards · Analysing velocity and metrics with AI · Running AI-assisted retrospectives · Driving continuous improvement
+![The Scrum loop — backlog to sprint to increment, with the retrospective feeding the next cycle.](.claude/skills/courseware-build/assets/img/scrum-loop.png)
 
-**Key concepts**
+*The Scrum loop — backlog to sprint to increment, with the retrospective feeding the next cycle.*
 
-- Status reports with AI — the AI turns sprint data and notes into a clear status report — progress against goal, completed and outstanding work, risks and next steps — pitched at the right level for its reader.
-- Dashboards and summaries — the AI helps design and describe a simple delivery dashboard (goal, scope, burndown, velocity, risks) and writes the narrative that explains what the numbers mean.
-- Analysing velocity — given past sprint data, the AI analyses velocity trends, flags a rising or falling trend, and helps forecast how much scope is realistic for coming sprints, with its assumptions stated.
-- Reading the metrics honestly — the AI helps interpret metrics (velocity, throughput, cycle time, completion rate) as signals for conversation and improvement, not as targets to game or sticks to beat the team with.
-- AI-assisted retrospectives — the AI helps design a retrospective, group and theme the team's raw input into patterns, and surface candid discussion points, so the facilitator can focus on the conversation.
-- From retro to actions — the AI drafts a small set of specific, owned, time-bound improvement actions from the retrospective themes, which the team reviews, commits to and carries into the next sprint.
-- Continuous improvement — the AI helps track improvement actions across sprints, spot recurring themes, and keep an honest record of what the team tried and what changed, feeding the inspect-and-adapt loop.
-- Psychological safety — retrospective input is sensitive; you anonymise and aggregate it, keep it inside the team, and use AI to find themes, never to judge or expose individuals.
-- Closing the loop — reporting, metrics and retrospectives only add value when they change what the team does next; the whole point of AI here is faster insight so the team spends its time acting on it.
+Scrum is a framework for delivering the highest value in the shortest time through an empirical process built on transparency, inspection and adaptation. It is suited to complex product development where requirements will change.
+
+**What Scrum is not**
+
+- It is not undisciplined. Inspection and adaptation, just-in-time planning and solid engineering practices all take real discipline.
+- It is not a detailed Gantt chart plan.
+- It is not a silver bullet. Every project differs — stick to the core values and accountabilities when applying it.
+
+**The three accountabilities**
+
+- **Product Owner** — Owns the vision for the product, creates and maintains the Product Backlog, and is the final decision-maker on prioritisation. Owns the WHAT.
+- **Scrum Master** — Facilitates the process, builds a self-organising team, removes impediments, protects the team from external disturbance and coaches the practice.
+- **Developers** — The cross-functional group who build the increment — design, build, test and everything else needed for a potentially shippable result. They own the HOW.
+
+A team of around seven people, plus or minus two, is the usual guidance. The team is cross-functional, self-organising and self-managing; it plans its own sprint, swarms on tasks to minimise idle work, and communicates face-to-face wherever possible.
 
 
-### Lab 10 — Generate Status Reports and a Delivery Dashboard
+### Dual-Track Agile
 
-Learning outcome: Use AI to turn sprint data and notes into a clear status report pitched for its reader, and to design and describe a simple delivery dashboard with the narrative that explains what the numbers mean.
+![Dual-track agile — discovery and delivery running simultaneously in one team.](.claude/skills/courseware-build/assets/img/dual-track-agile.png)
 
-Goal: At the end of a sprint the team must tell its story to others. In this lab you use an assistant to produce reporting that is clear and honest. You feed the sprint's goal, completed and outstanding work, risks and next steps to the AI and have it draft a status report — then re-pitch it for the right reader, from a one-page stakeholder update to a three-line leadership summary. You then design a simple delivery dashboard: you ask the AI which few metrics matter (goal, scope, burndown, velocity, risks), how to lay them out, and — most importantly — to write the narrative that explains what the numbers actually mean, so a dashboard informs rather than misleads. You review every figure the AI states against your real data. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
+*Dual-track agile — discovery and delivery running simultaneously in one team.*
 
-**What you'll build**
+Dual-track agile was first documented by Desiree Sy in 2007 and popularised by Jeff Patton and Marty Cagan. It runs two tracks at once inside a single team:
 
-A reviewed Tempo 2.0 sprint status report pitched for its audience, and a simple delivery-dashboard design (the few metrics that matter, a layout, and the plain-language narrative that explains them) — saved as the reporting section of your playbook.   (Tools: Any assistant, the status-report template from your prompt library, audience-pitched reporting, dashboard design, a metrics narrative.)
+- **The discovery track** — Focuses on fast learning and validation. It asks: should we build this, and what exactly? It produces validated product backlog items.
+- **The delivery track** — Focuses on predictability and quality. It asks: how do we build this well? It produces releasable increments.
 
-**Step-by-step**
+> The most expensive way to test your idea is to build production quality software.
 
-1. Gather your sprint data: the sprint goal, what was completed and what slipped, your risk log from Lab 8, and the burndown from Lab 7. Grab your status-report template from your prompt library.
-2. Draft the status report. Paste the prompt below with your data.
+Discovery has three legitimate outcomes: build forward, kill the idea, or keep learning. If you are doing discovery right, you will substantially change and kill a lot of ideas — that is the point, not a failure.
 
-   ```bash
-   You are a delivery lead writing a sprint status report for stakeholders. Here is our Tempo 2.0 Sprint 1 data:
-<PASTE GOAL, COMPLETED, OUTSTANDING, RISKS, NEXT STEPS>
-Task: write a one-page status report with these sections — Sprint goal and whether we met it, What we delivered, What is outstanding and why, Risks and mitigations, Next sprint focus. Format: clear headings and short bullets. Constraints: be honest about what slipped, use only the data given, and do not overstate progress.
-   ```
+**Four myths about dual-track**
 
-3. Re-pitch for leadership. Ask the AI to compress the same report for executives with the prompt below.
+1. 'Discovery comes first, then delivery.' No — both run continuously and simultaneously. Discovery is a necessary part of product development, practised with the same agile and lean principles.
+2. 'All work flows from discovery into development.' No — ideas are frequently abandoned during discovery.
+3. 'They are separate teams.' No — a product manager, designer and senior engineer may lead discovery, but they must involve the whole team wherever possible.
+4. 'Discovery ends at launch.' No — keep measuring and learning after you ship.
 
-   ```bash
-   Compress that status report into a three-line leadership summary: line 1 the headline (did we meet the sprint goal), line 2 the main risk, line 3 the ask or decision needed. Keep it truthful to the full report.
-   ```
+> **Note:** The anti-pattern to watch for is what Marty Cagan calls doing little mini-waterfalls inside your Scrum framework: the product manager writes requirements, hands them to a designer who produces wireframes, who hands them to the delivery team. Each handoff looks like collaboration and is actually a queue. The fix is the product manager, designer and lead engineer working together, side by side, to create and validate backlog items.
 
-4. Fact-check the report. Check every number and claim against your real data — completed points, dates, risk status. Correct anything the AI rounded, guessed or overstated. A status report the team cannot stand behind is worse than none.
-5. Design a delivery dashboard. Ask the AI what to show and how, using the prompt below.
 
-   ```bash
-   Design a simple one-screen delivery dashboard for the Tempo 2.0 release that a mixed audience could read at a glance. Task: recommend the few metrics that matter most (for example sprint goal status, scope completed vs planned, burndown, velocity trend, top risks), describe a clean layout for them, and say what each metric should and should not be used to conclude. Do not add vanity metrics.
-   ```
+### Converting Ideas into Agile Artefacts
 
-6. Write the metrics narrative. Have the AI explain the numbers in words, then review it.
+| Level | What it is | Example |
+|---|---|---|
+| Epic | A large body of work spanning many sprints | Self-service health screening |
+| Feature | A coherent capability within an epic | Appointment booking without a call centre |
+| Hill | An outcome statement: as a [who], I want [what], so that [wow] | As a first-time patient, I can book a screening in under 3 minutes, so that I never need to phone. |
+| User story | A unit of value: as a [user], I want [goal], so that [reason] | As a patient, I want to see the next three available slots so that I can choose quickly. |
+| Task | The work needed to deliver the story | Build the slot-availability API endpoint. |
 
-   ```bash
-   Write a short narrative to sit beside the dashboard that explains what this sprint's numbers actually mean for a non-technical reader — what is going well, what to watch, and what the numbers do NOT tell us. Base it on:
-<PASTE YOUR REAL SPRINT METRICS>
-Be honest and avoid making the metrics sound better than they are.
-   ```
+Hills come from IBM Design Thinking. A Hill states the outcome and the 'wow'; a user story states the function. Teach and use both — they do different jobs. Three Hills per release is the usual guidance, and each must be measurable. In one documented IBM session, a manufacturing user's need for inventory data started as a vague 'in minutes' and was pushed until it became '5 minutes', justified because the data had to be available before the morning manager meeting. That specificity is what separates a testable outcome from an aspiration.
 
-7. Review and save. Confirm the dashboard would inform, not mislead, and that the narrative is honest. Save the status report, dashboard design and narrative as the reporting section of your Tempo-2.0-Playbook folder.
+**User stories — the three C's**
 
-**Test it**
+- **Card** — The story is written small, on a card. Its size is a deliberate constraint on scope.
+- **Conversation** — The card is a promise to have a conversation. The detail lives in that discussion, not in the text.
+- **Confirmation** — Acceptance criteria define how you will know it is done — testable conditions, not a restatement of the story.
 
-You have a reviewed Tempo 2.0 status report with an audience-pitched leadership summary and every figure fact-checked against real data, plus a simple delivery-dashboard design with an honest narrative explaining what the metrics do and do not mean — all saved to your playbook.
+> **Note:** The most common acceptance-criteria failure, and the one generative AI reproduces most reliably, is criteria that merely repeat the story in other words. If it cannot fail a test, it is not an acceptance criterion.
 
-> **Note:** Full commands and screenshots are in labs/lab-10-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
+
+### Release Prioritisation — The Three-Cake Model
+
+![Cupcake, Birthday Cake, Wedding Cake — every release is a whole cake at its own scale.](.claude/skills/courseware-build/assets/img/cake-releases.png)
+
+*Cupcake, Birthday Cake, Wedding Cake — every release is a whole cake at its own scale.*
+
+IBM Design Thinking prioritises stories across three releases using an unusually memorable metaphor. The Cupcake release is complete and satisfying at small scale. The Birthday Cake release serves more people with broader value. The Wedding Cake release is the full realised vision.
+
+The point of the metaphor is that a cupcake is a WHOLE cake — not a slice of an unfinished wedding cake. A partially built product is not a smaller product; it is a broken one, and shipping it teaches you nothing except that users dislike broken things. Contrast this with the cost of skipping validation entirely: a builder spends months and thousands of dollars on a handmade steel bookshelf, only to discover the customer bought an e-reader and no longer reads paper books.
+
+
+### Agile Estimation
+
+- **Size, not duration** — Story points measure relative complexity and effort, not hours. Duration is derived later from observed velocity.
+- **Relative, not absolute** — Humans compare well and predict poorly. 'This is twice that' is far more reliable than 'this takes six hours'.
+- **A constrained scale** — Values based on the Fibonacci sequence (1, 2, 3, 5, 8, 13, 20, 40, 100) force meaningful distinctions rather than false precision.
+- **Additive** — Points can be summed across stories in a way that time-based estimates cannot honestly be.
+- **Velocity from done work** — Only fully 'done, done' stories count. Partially completed stories count for nothing — the last 10% routinely takes 90% of the time, and business value is not achieved until it is done.
+- **Planning Poker** — Estimate privately, reveal simultaneously, then discuss the outliers. That discussion — not the number — is the real value.
+
+The actual velocity of the last two iterations is the planned velocity of the next. Sizing must account for all the cross-functional effort involved: design, code, test, copywriting, documentation and localisation.
+
+
+### Ceremonies, Artefacts and Information Radiators
+
+**The daily stand-up**
+
+Fifteen minutes maximum. Each person reports what they did since the last stand-up, what they will do before the next one, and what is blocking them. There is no discussion or debate during the stand-up — listening only. Problem-solving starts after the meeting ends, and the Scrum Master then leads the removal of blockers.
+
+**Artefacts**
+
+- Product Backlog — a broad, prioritised list of all required features and wish-list items, with rough estimates of business value and development effort. It is the WHAT that will be built.
+- Sprint Backlog — the prioritised list of stories selected for a given sprint.
+- Sprint Burndown Chart — completion of story points over the sprint.
+- Release Burndown Chart — progress across a whole release.
+
+**Information radiators**
+
+An information radiator, a term coined by Alistair Cockburn, is a highly visible graphical display of project status in the team's workspace: the current iteration's stories, work assignments, test counts, delivered stories and actions from the previous retrospective. It keeps the team focused and drives transparency across the organisation.
+
+**Retrospective techniques**
+
+- Post-it brainstorming
+- Dot voting
+- Timeline
+- Team radar
+- Keep / Drop / Try
+
+
+### GenAI Across the Sprint
+
+- **Backlog drafting** — Generate candidate stories and acceptance criteria from a Hill in seconds — then cut everything that assumes something you never validated.
+- **Backlog grooming** — Flag duplicate and related items across a large backlog faster than any human scan.
+- **Test data** — Generate realistic edge-case data sets without exposing real customer records.
+- **Retrospective synthesis** — Cluster themes across many notes — after the team has spoken, never instead of it.
+- **Sprint reporting** — Draft the summary so the Scrum Master spends the time on impediments rather than formatting.
+- **Where it must not run** — Prioritisation, the mid-sprint disruption decision, and the retrospective conversation itself.
 
 ---
 
 
-### Lab 11 — Analyse Velocity and Metrics with AI
+## Topic 4 — Scaling and Sustaining Innovations with Agile Design Thinking and Generative AI
 
-Learning outcome: Use AI to analyse past sprint data — velocity trend, throughput, cycle time and completion rate — to forecast realistic scope, and to interpret the metrics honestly as signals for conversation, not targets to game.
+Topic weighting: 25%. This topic addresses the hardest part: making innovation survive contact with the wider organisation, and proving it worked.
 
-Goal: Metrics only help if they are read well. In this lab you use an assistant as an analyst on the supplied Tempo history — several sprints of velocity and delivery data. You ask the AI to analyse the velocity trend, flag whether it is rising, falling or noisy, and forecast how much scope is realistic for the next sprints, with its assumptions stated. You have it interpret throughput, cycle time and completion rate as signals — what each suggests to talk about — and you explicitly guard against misusing them: metrics are for the team to improve, not targets to hit or sticks to beat people with. You review every calculation and reading, because a confident but wrong analysis is worse than none. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
 
-**What you'll build**
+### The Three Levers That Actually Scale Innovation
 
-An AI-assisted analysis of the Tempo velocity and delivery metrics — a velocity-trend read, a realistic scope forecast with assumptions, and an honest interpretation of throughput, cycle time and completion rate as signals — reviewed by you and saved.   (Tools: Any assistant, the sprint metrics history, velocity-trend analysis, scope forecasting, honest metric interpretation.)
+- **Purpose, alignment and autonomy** — Be stubborn on the vision, but flexible on the details. Teams need a clear outcome and genuine authority to pursue it. Visualising the whole end-to-end process — from aspirations and hypotheses through design experiments to feedback — on a large product wall lets the whole team play along together.
+- **Measure things that matter** — Structure your metrics around the future decisions you want to make. Only measure things that indicate progress toward your goal.
+- **Make decisions based on learning** — Define beliefs and assumptions so they can be tested, decide the most important thing to learn, then design experiments that deliver that learning.
 
-**Step-by-step**
+> If a measurement matters at all, it is because it must have some conceivable effect on decisions and behaviour.
 
-1. Open the supplied sprint metrics history for Tempo (labs/reference-pack/) — several sprints of committed vs completed points, and any throughput or cycle-time figures. Paste it into any assistant.
-2. Analyse the velocity trend. Use the prompt below.
+Hypothesis-Driven Development offers a repeatable format for framing outcomes, beliefs and metrics, which makes them easy to communicate to others.
 
-   ```bash
-   You are an Agile delivery analyst. Here is our Tempo sprint history:
-<PASTE THE SPRINT METRICS>
-Task: analyse our velocity trend across these sprints — is it rising, falling, stable or too noisy to tell? Show the average and the range, and explain what could be driving the pattern. Constraints: state clearly if the data is too little to be reliable, and do not present a trend more confident than the data supports.
-   ```
 
-3. Forecast realistic scope. Ask the AI to project the next sprints with assumptions stated.
+### Culture — The Four Principles
 
-   ```bash
-   Based on that velocity analysis, forecast how many story points we could realistically commit to in each of the next 2 sprints, giving a conservative and an optimistic figure. State every assumption (team availability, no major disruption, similar work type). Make clear this is a planning aid, not a promise.
-   ```
+Steve Perkins argues that new practices and methodologies only succeed in a lasting way if the underlying culture supports them. Four principles carry that culture:
 
-4. Verify the maths. Recompute the average velocity yourself from the raw numbers and compare it to the AI's. If they differ, find out why. Never report a metric you have not checked.
-5. Interpret the wider metrics as signals. Use the prompt below for throughput, cycle time and completion rate.
+1. People over process — assemble people around a shared mission rather than a bureaucratic structure, and prioritise real-time collaboration.
+2. Creativity and innovation — allow personal freedom for self-expression, encourage smart risk-taking, and build exploration time into the workflow.
+3. Iteration, prototyping and adaptation — replace year-long waterfall-style projects with low-fidelity versions tested in real environments.
+4. Multi-disciplinary autonomous teams — self-managing cross-functional teams with genuine local decision-making authority beat hierarchical structures.
 
-   ```bash
-   Interpret our throughput, cycle time and sprint completion rate as signals for a retrospective conversation, not as performance targets. For each metric: what a healthy pattern looks like, what our numbers might be signalling, and one question the team should discuss. Explicitly warn against any way this metric could be gamed or misused to pressure individuals.
-   ```
+**The rollout playbook**
 
-6. Add the human read. Write two or three lines of your own on what the metrics really suggest for Tempo, and note one thing the numbers do not capture (for example quality, morale, or hidden rework). Metrics inform the conversation; they do not end it.
-7. Save the metrics analysis as a section of your Tempo-2.0-Playbook folder: the velocity-trend read, the scope forecast with assumptions, the signals interpretation, and your own honest commentary — ready to feed the retrospective.
+- Run design thinking and agile in PARALLEL, not sequentially.
+- Emphasise principles and practices simultaneously.
+- Translate concepts into simple, conversational language rather than jargon.
+- Reinforce continuously so it does not become the flavour of the month.
+- Give specific behavioural examples of what good looks like.
+- Celebrate small wins.
+- Start small: choose low-risk, high-value opportunities and attempt one to three before scaling.
+- Enable cross-functional collaboration, including physical gatherings with real end-users.
+- Help agile teams understand the value of the ideation, definition and empathy phases, and allow reframing before development proceeds.
 
-**Test it**
+> **Note:** Design thinking requires an organisational culture that is open, trusting and encouraging. Without that foundation the methodology struggles to take root. Teaching design thinking broadly builds valuable awareness, but it does not replace the need for designers with deep expertise, and designers need a seat at the table from the outset.
 
-You have an AI-assisted metrics analysis for Tempo — a velocity-trend read you verified by re-computing the average, a scope forecast with explicit assumptions, and an honest interpretation of throughput, cycle time and completion rate as signals (not targets) — with your own commentary, saved to your playbook.
 
-> **Note:** Full commands and screenshots are in labs/lab-11-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
+### Engaging Stakeholders and Creating Buy-In
+
+- Start small and visible — one credible win buys more permission than any presentation.
+- Bring evidence, not opinion: the user quote, the test result, and the assumption you falsified.
+- Agree the success metric BEFORE the pilot runs, not after the results are in.
+- Involve the sceptic early. The person most likely to block it is the most valuable participant in discovery.
+- Have leaders participate rather than sponsor. A leader who sits in a user interview changes behaviour more than a memo.
+- State what you will stop doing if the evidence goes against you. Naming the downside earns credibility.
+
+
+### Resource Management in Innovation Projects
+
+- Fund learning rather than plans — release budget in stages tied to validated learning.
+- Protect discovery capacity. If discovery is unstaffed, delivery will build whatever is loudest.
+- Use AI to free expert time, so scarce expertise goes to judgement work rather than synthesis.
+- Track the cost of being wrong, not just the cost of the test. The relevant number is what building the wrong thing would cost.
+- Govern AI use: record provenance, check for bias, keep an audit trail for AI-assisted decisions.
+- Kill weak work deliberately. Stopping an initiative releases your scarcest resource — your best people.
+
+
+### Sensemaking
+
+Sensemaking is the discipline of turning ambiguous, conflicting and partial signals into a shared narrative that an organisation can act on. Real innovation decisions are never made on complete evidence.
+
+- Signals arrive incomplete and contested — waiting for certainty is itself a decision.
+- The output is a shared narrative the organisation can act on together, not a data dump.
+- The evidence that contradicts your narrative is the most valuable input in the room.
+- Generative AI clusters signals well, and will confidently manufacture a coherent narrative even when the underlying evidence is thin. Fluency is not truth.
+
+
+### Systems Thinking
+
+![Reinforcing and balancing feedback loops.](.claude/skills/courseware-build/assets/img/feedback-loops.png)
+
+*Reinforcing and balancing feedback loops.*
+
+Systems thinking sees the whole rather than the parts. Five ideas carry most of its practical value:
+
+- **Interconnectedness** — Shift from linear cause-and-effect to circular thinking. A system is a set of components working together to achieve an objective; everything is part of a wider ecosystem.
+- **Synthesis** — Combining two or more connections to create a new idea or concept. It is the opposite of analysis, which dissects complexity into parts and loses the behaviour.
+- **Emergence** — The natural outcome of things coming together. Emergent behaviour is non-linear and self-organised; it cannot be predicted from the parts alone.
+- **Feedback loops** — With connection come loops and flows. Reinforcing loops amplify a change; balancing loops stabilise it. Both are observable and can be altered.
+- **Causality** — Understanding how a change in one variable actually propagates to an outcome in a dynamic environment.
+
+Systems mapping draws the elements and their interconnections to reveal insights, guide policy decisions and identify the leverage point where an intervention will actually work.
+
+> **Note:** Systemic failure is typically a reinforcing loop with no effective balancing counterpart. No individual decision in the chain has to be irrational for the outcome to be catastrophic — which is exactly why individual good judgement is not a sufficient safety mechanism.
+
+|  | Design Thinking | Systems Thinking |
+|---|---|---|
+| Starting point | A human need | A pattern of behaviour over time |
+| Unit of attention | The user and their experience | The structure that produces the outcome |
+| Asks | What does this person need? | Why does this system keep producing this result? |
+| Typical output | A validated solution concept | A leverage point and an intervention |
+| Blind spot | Can optimise for one user while harming the system | Can map elegantly and never ship anything |
+| Used together | Design the intervention with empathy | Place it where the system will actually respond |
+
+
+### Metrics and KPIs for Innovation
+
+![The innovation metric test — does it change a decision, and is it timely?](.claude/skills/courseware-build/assets/img/metrics-quadrant.png)
+
+*The innovation metric test — does it change a decision, and is it timely?*
+
+The decisive test for any innovation metric is Hubbard's: if a movement in this number would change no decision that anyone would make, the number is decoration. Vanity metrics — ideas submitted, workshops run, people trained — always rise and prove nothing, which is precisely why they are popular and why they do not survive a budget review.
+
+**A balanced scorecard**
+
+- **Customer value** — Time saved, effort removed, task success rate, or a genuine satisfaction signal.
+- **Business value** — Revenue, cost avoided, retention or cycle time, expressed in money where that is honest.
+- **Societal value** — Access, inclusion, safety or environmental effect — the value not captured in the price.
+- **A leading indicator** — Something that moves early enough to still change a decision this quarter.
+
+**Three separate validations**
+
+![Problem, solution and demand validation are three different tests.](.claude/skills/courseware-build/assets/img/three-validations.png)
+
+*Problem, solution and demand validation are three different tests.*
+
+Do not conflate a good prototype test result with a strong affinity for the problem, or with customer demand for the solution. These are separate concerns requiring different learning approaches:
+
+- **Problem validation** — Does this problem genuinely exist, and does it matter to enough people?
+- **Solution validation** — Does this solution actually solve the problem for those people?
+- **Demand validation** — Will they adopt it, switch to it, or pay for it?
+
+> **Note:** Teams routinely present solution-validation evidence as though it proved demand. That is how confidently-built products launch to silence.
 
 ---
 
 
-### Lab 12 — Run an AI-Assisted Retrospective and Plan Continuous Improvement
+## Hands-On Activities
 
-Learning outcome: Use AI to design a retrospective, theme the team's anonymised input into patterns, surface candid discussion points, and turn the themes into a small set of specific, owned, time-bound improvement actions — completing the end-to-end playbook.
+The twelve activities below are the practical core of this course. Each is built on a documented real-world case, and each follows the same structure: the case, your scenario, the step-by-step instructions, the discussion questions and the debrief.
 
-Goal: A sprint ends by learning from it. In this final lab you use an assistant to make a retrospective sharper and its follow-through real, while protecting the people in it. You ask the AI to design a retrospective format suited to this sprint, then feed it the team's raw, anonymised retro input and have it group and theme the feedback into patterns and surface honest discussion points — the facilitator's prep done in seconds. Crucially, you handle the input responsibly: it is anonymised and aggregated, kept inside the team, and used to find themes, never to judge individuals. From the themes the AI drafts a few specific, owned, time-bound improvement actions, which you review and commit to, and you set up a simple way to track them across sprints so the inspect-and-adapt loop actually closes. This assembles your complete Tempo 2.0 Agile AI Playbook. BUILDING BLOCK — what you create in this lab becomes a section of your Tempo 2.0 Agile AI Playbook, the connected project you assemble across all 12 labs.
-
-**What you'll build**
-
-An AI-assisted retrospective — a fit-for-purpose format, the team's anonymised input themed into patterns with candid discussion points, and a small set of specific, owned, time-bound improvement actions with a way to track them — completing your end-to-end Tempo 2.0 Agile AI Playbook.   (Tools: Any assistant, retrospective design, anonymised theming of team input, discussion-point surfacing, improvement-action planning, continuous-improvement tracking.)
-
-**Step-by-step**
-
-1. Design the retrospective. Ask the AI for a format suited to this sprint, using the prompt below.
-
-   ```bash
-   You are an Agile facilitator. Our Tempo 2.0 Sprint 1 had a strong start but slipped on the reminder-engine work and had a dependency block. Task: suggest a retrospective format suited to this sprint (for example Start/Stop/Continue, Glad/Sad/Mad, or 4Ls), with a short agenda and 4-5 good opening questions. Explain in one line why this format fits this sprint.
-   ```
-
-2. Prepare the input responsibly. Take the supplied raw retro input (labs/reference-pack/) and confirm it is anonymised before you use it — no names, no blame. If your own team's input had names, strip them first. Note this as the rule: retro input is aggregated and stays inside the team.
-3. Theme the feedback. Feed the anonymised input in with the prompt below.
-
-   ```bash
-   Here is the anonymised raw input from our sprint retrospective:
-<PASTE THE ANONYMISED RETRO INPUT>
-Task: group it into 4-6 themes, showing how many comments support each and summarising the point of view within each theme fairly. Format: Theme | Summary | How many mentioned it. Constraints: keep it anonymous and neutral, represent minority views too, and do not single out or infer any individual.
-   ```
-
-4. Surface candid discussion points. Ask the AI to turn themes into questions the team should actually discuss.
-
-   ```bash
-   From those themes, suggest 4-5 candid but constructive discussion points for the retrospective — the things the team most needs to talk about honestly to improve, phrased as questions, not accusations. Focus on the system and process, not people.
-   ```
-
-5. Draft improvement actions. Convert the discussion into commitments with the prompt below.
-
-   ```bash
-   Turn the top themes into a SMALL set (3-4) of improvement actions for next sprint. Each must be specific, have a suggested owner role, and be time-bound (done by when). Format: Action | Owner (role) | By when | The theme it addresses. Constraints: keep it to a few actions the team can actually do — a long list improves nothing.
-   ```
-
-6. Commit and set up tracking as a human. Review the actions with the team's hat on: are they genuinely doable, do they address the real themes? Adjust, assign real owners, and set up a simple tracker (a short list carried into next sprint's retro) so you can check what actually changed — closing the inspect-and-adapt loop.
-7. Assemble the complete playbook. Save the retrospective format, themed feedback, discussion points and improvement-action tracker as the final section of your Tempo-2.0-Playbook folder. Then review the whole folder end to end — toolkit, prompts, responsible-AI checklist, stories, backlog, plan, tracking, risks, docs, reports, metrics and retro — as one connected Tempo 2.0 Agile AI Playbook. This is the deliverable the course set out to build.
-
-**Test it**
-
-You have an AI-assisted retrospective — a fit-for-purpose format, the team's anonymised input themed into patterns with candid discussion points, and 3-4 specific, owned, time-bound improvement actions with a tracker — handled responsibly (anonymised, no blame), and your complete end-to-end Tempo 2.0 Agile AI Playbook is assembled and reviewed.
-
-> **Note:** Full commands and screenshots are in labs/lab-12-*.md. Use only projects, data and notes you are authorised to use. Do not paste confidential customer data, personal information, credentials or proprietary code into a public AI assistant. Use the supplied Tempo 2.0 project brief rather than real client material, treat every AI output as a first draft to be reviewed and fact-checked, and be transparent with your team about what was AI-assisted before it goes into a real backlog, plan, report or decision.
-
----
+Work in groups of three to five. Each activity also exists as a standalone PDF brief in the activities folder, so you can work from a printed copy at your table.
 
 
-## Wrap-Up
+### Activity 1 — Airbnb — Diagnosing Why a Method Alone Does Not Save a Business
 
-You have taken one product — Tempo 2.0 — through an entire AI-assisted agile delivery across two days, from setting up an AI toolkit to running a retrospective, using ChatGPT, Claude and Gemini as a drafting and analysis partner while keeping every decision human.
+Topic 01: Foundations of Design Thinking, Agile, and Generative AI for Problem-Solving   ·   Duration: 45 minutes   ·   Tools: Padlet Classroom Board, ChatGPT or Microsoft Copilot
 
-**What you built**
+**Learning outcome addressed**
 
-- An AI toolkit for agile work — ChatGPT, Claude and Gemini set up, a reusable agile prompt library, and a responsible, human-in-the-loop checklist.
-- A planned delivery — INVEST-quality user stories and acceptance criteria, a groomed and MoSCoW-prioritised product backlog, and a sprint plan, estimates and release roadmap.
-- A running sprint — stand-up summaries and progress tracking, a risk, blocker and dependency log, and AI-assisted documentation, communication and test scenarios.
-- A closed-out sprint — stakeholder status reports and a delivery dashboard, a velocity and metrics analysis, and an AI-assisted retrospective with a concrete continuous-improvement plan.
-- One connected Tempo 2.0 Agile AI Playbook that carries the whole delivery, section by section.
+LO1 · A1 · K1 · K2 — Integrate design thinking methodologies and agile principles to drive organisational innovation.
 
-**What to do next**
+**The real case**
 
-- Rebuild the playbook for a real, non-confidential project of your own using the same prompts and templates.
-- Introduce your saved prompt library to your team so everyone drafts stories, summaries and reports the same way.
-- Keep your responsible-AI checklist visible in every sprint — review, fact-check and protect data every time.
-- Always keep the team's judgement in the loop: the AI drafts and analyses, but the Product Owner, Scrum Master and team own every decision.
+Airbnb, 2009. The company was weeks from failing, stuck at roughly $200 revenue a week. The founders noticed a pattern in the New York listings: the photographs were terrible, taken on cheap phone cameras in bad light. Rather than run an A/B test or ship a feature, Paul Graham told them to fly to New York and meet the hosts. They rented a camera, went door to door, and replaced the amateur photos with professional ones. Within a week revenue roughly doubled. It was not a scalable act and it was not in any sprint backlog — but it was the insight that unlocked the business, and it later became a funded, scaled service.
+
+**Your scenario**
+
+Your team is the innovation unit of a regional marketplace platform whose bookings have flatlined. Analytics show visitors browse and leave. The engineering team wants to A/B test the checkout button. You suspect, as Airbnb did, that the real problem is not on the screen at all.
+
+**What you will do**
+
+Learners analyse the Airbnb turnaround to separate the three disciplines — Design Thinking (finding the right problem), Lean (validating the solution is worth building) and Agile (building it right) — and explain why starting with Agile alone would never have surfaced the photography insight.
+
+**What you will produce**
+
+A completed Padlet board mapping the Airbnb story onto Design Thinking / Lean / Agile, plus a group position statement on what the marketplace platform should do first.
+
+**Step-by-step instructions**
+
+1. Trainer creates the Padlet classroom and shares the classroom code and QR with the class.
+2. Join the Padlet board at https://alfredang.github.io/padlet/ using the classroom code and your display name.
+3. Read the Airbnb case in the Learner Guide (Activity 1) with your group of 3–5.
+4. In the section 'Right Problem', post what the real problem was and the evidence for it.
+5. In the section 'Right Solution', post how the founders validated cheaply before scaling.
+6. In the section 'Build It Right', post what Agile delivery would look like once the insight is proven.
+7. Use ChatGPT to stress-test your position: paste your problem statement and ask it to argue the opposite case.
+8. Post your group's one-sentence recommendation for the marketplace platform, then Like the two strongest posts from other groups.
+
+**Discussion questions**
+
+1. Which of the three disciplines — Design Thinking, Lean or Agile — actually produced the photography insight, and why could the other two not have produced it?
+2. The founders did something deliberately unscalable. When is 'do things that don't scale' the right innovation strategy, and when is it an excuse to avoid rigour?
+3. Map the story onto the Double Diamond. Where does 'fly to New York and meet the hosts' sit — Discover, Define, Develop or Deliver?
+4. Your engineers want to A/B test the checkout button. Write the one question you would ask them to expose whether they are solving the right problem.
+5. How would you have used GenAI here — and what part of this story could GenAI NOT have done for you?
+
+**How you know you are done**
+
+Your board shows the story correctly split across all three disciplines, and your recommendation names a discovery action before any build action.
+
+**Debrief — what the room should conclude**
+
+The photography insight came from Empathise, not from analytics. Agile would have optimised the wrong thing faster — a better checkout button on a listing nobody wanted to book. Lean's contribution was the cheap validation (a handful of listings, one week, one rented camera) before any engineering investment. The trap the class should name out loud: teams reach for Agile because it feels productive, and end up building the wrong thing right. GenAI could have clustered the review complaints and drafted interview guides in minutes, but it could not have sat in a host's living room and noticed the light. Empathy is still human work; AI compresses the analysis around it.
 
 ---
 
 
-## Next Steps
+### Activity 2 — Netflix vs Blockbuster — Innovation as an Operating System
 
-- First pass: complete every lab yourself, following the steps and verifying each 'Test it' check.
-- Second pass: rerun the key labs on your own real, non-confidential project, from setup and prompts to a retrospective.
-- Introduce your prompt library and responsible-AI checklist to your team so the practice sticks beyond the course.
-- Review each lab's detailed steps in this guide and re-create the playbook in your own AI assistant.
+Topic 01: Foundations of Design Thinking, Agile, and Generative AI for Problem-Solving   ·   Duration: 45 minutes   ·   Tools: Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO1 · LO4 · A6 · K2 · K3 — Cultivate design thinking as a viable tool to foster new innovations; drivers of organisational growth.
+
+**The real case**
+
+In 2000 Reed Hastings offered to sell Netflix to Blockbuster for $50 million. Blockbuster's CEO reportedly laughed him out of the room. Blockbuster had 9,000 stores and made a large share of its profit from late fees — a revenue stream that depended on customers being unhappy. Netflix removed late fees entirely, then cannibalised its own profitable DVD-by-mail business to launch streaming in 2007, then cannibalised licensed content by producing originals from 2013. Blockbuster filed for bankruptcy in 2010. Netflix did not win on a single idea; it won because it repeatedly ran the innovation loop against itself while its competitor optimised the business it already had.
+
+**Your scenario**
+
+You lead innovation at an established Singapore firm whose most profitable product line depends on a customer inconvenience — a booking fee, a lock-in contract, or a manual process customers pay to have done for them. A start-up has just launched a free alternative. The board wants a response by the end of the quarter.
+
+**What you will do**
+
+Learners contrast an organisation that treated innovation as a repeatable operating system with one that optimised its existing model, and identify the specific organisational conditions — purpose, autonomy, and what gets measured — that allowed one to self-disrupt and prevented the other.
+
+**What you will produce**
+
+A Padlet comparison board plus a written 'what we would have to stop measuring' statement for the learner's own organisation.
+
+**Step-by-step instructions**
+
+1. Rejoin the Padlet classroom board and open the Activity 2 section.
+2. In your group, list every Blockbuster metric you can infer from the case in the sub-section 'What they measured'.
+3. Post one metric from your own organisation that quietly protects the status quo.
+4. Ask ChatGPT: 'What early signals should a DVD rental chain have tracked in 2000 to detect streaming disruption?' and evaluate whether those signals were knowable then.
+5. Post your group's answer to 'what we would have to STOP measuring to innovate honestly'.
+6. Comment on another group's post, naming one risk in their proposal.
+
+**Discussion questions**
+
+1. Blockbuster's late fees were both its profit engine and its biggest customer pain point. What is the equivalent in your own organisation?
+2. Netflix cannibalised two of its own successful businesses. What made that organisationally possible, and what would block it where you work?
+3. 'Measure things that matter' — what was Blockbuster measuring that made the decision to decline look rational at the time?
+4. Was Blockbuster's failure a failure of ideas, of execution, or of the operating system around both? Defend your answer.
+5. Where could GenAI have given Blockbuster early warning, and would leadership have believed it?
+
+**How you know you are done**
+
+Your board names at least one real metric in your own organisation that discourages innovation, and one concrete change to it.
+
+**Debrief — what the room should conclude**
+
+Blockbuster did not lack information — it lacked an operating system that let unwelcome information change a decision. Its metrics rewarded protecting late-fee revenue, so every rational manager defended it. This is the 'measure things that matter' principle in its negative form: a metric that cannot change a decision is decoration, and a metric that punishes the future protects the past. Netflix's advantage was structural, not creative: purpose and autonomy at the top, cheap experiments underneath, and a willingness to let a new bet eat an old one. GenAI would have flagged the trend, but the barrier was never detection — it was the incentive to act.
+
+---
+
+
+### Activity 3 — Positioning GenAI in the Innovation Loop — Where It Helps and Where It Lies
+
+Topic 01: Foundations of Design Thinking, Agile, and Generative AI for Problem-Solving   ·   Duration: 40 minutes   ·   Tools: ChatGPT or Microsoft Copilot, Padlet Classroom Board
+
+**Learning outcome addressed**
+
+LO1 · K1 — Latest trends in design thinking; how generative AI enhances design thinking and agile processes.
+
+**The real case**
+
+A Singapore bank's innovation team used a large language model to generate customer personas for a new savings product aimed at gig-economy workers. The AI produced five polished, confident personas in under a minute, complete with names, incomes, quotes and frustrations. The team built a concept around 'Marcus, 29, a Grab driver saving for a HDB flat'. When they finally ran six real interviews, the actual gig workers' dominant anxiety was not saving for a flat at all — it was irregular income smoothing within a single month, and a deep distrust of anything that locked their money away. The AI personas were plausible, internally consistent, well-written, and wrong. They were a compression of what the internet says about gig workers, not evidence about these gig workers.
+
+**Your scenario**
+
+Your team has two weeks to produce a validated problem statement. A colleague proposes skipping the interviews because 'the AI personas are good enough and we're behind schedule'.
+
+**What you will do**
+
+Learners run the same persona-generation task through a GenAI tool, then interrogate the output against an evidence test, to build a working rule for where GenAI belongs in the design thinking loop and where its confident fluency becomes a liability.
+
+**What you will produce**
+
+A GenAI-generated persona set annotated with evidence gaps, and a group 'AI use rule' posted to Padlet.
+
+**Step-by-step instructions**
+
+1. Open ChatGPT or Microsoft Copilot.
+2. Prompt: 'Create 3 detailed user personas for a savings product aimed at gig-economy workers in Singapore. Include name, age, income pattern, goals, frustrations and a representative quote.'
+3. Read the output as a group and mark every claim that is an assumption rather than evidence.
+4. Prompt the AI again: 'For each persona, list what evidence would be required to confirm it, and what would falsify it.'
+5. Compare the two outputs — note how much more useful the second framing is.
+6. Draft your group's one-sentence rule for using GenAI in discovery and post it to the Padlet Activity 3 section.
+7. Like the rule you find most defensible from another group and comment why.
+
+**Discussion questions**
+
+1. The AI personas were plausible but wrong. What property of large language models makes fluent output a poor proxy for truth?
+2. Which parts of the design thinking loop can GenAI genuinely accelerate, and which parts must stay human? Draw the line and justify it.
+3. Your colleague says the interviews can be skipped. Give the strongest version of their argument, then rebut it.
+4. How would you make an AI-generated persona falsifiable — what evidence would prove it wrong?
+5. What governance would you put in place so AI-generated insight is always labelled as unvalidated?
+
+**How you know you are done**
+
+Your annotated persona set clearly separates assumption from evidence, and your posted rule states both where GenAI is allowed and where it is not.
+
+**Debrief — what the room should conclude**
+
+A language model generates the statistically likely, not the locally true. That is exactly what you want for divergence — volume, range, provocations, first drafts — and exactly what you must not trust for convergence, where a wrong-but-confident persona sends a whole quarter's work in the wrong direction. The workable rule most groups arrive at: use GenAI to widen the funnel and to synthesise evidence you already collected; never use it as the evidence itself. Practically, every AI-generated artefact should carry a provenance label — who or what produced it, and what real-world evidence has since confirmed or refuted it. Note also the failure was caught only because someone eventually talked to six real people; six interviews is a small price for not building the wrong product.
+
+---
+
+
+### Activity 4 — GE Adventure Series — Reframing the Problem Instead of Fixing the Machine
+
+Topic 02: Problem Framing and Ideation: Leveraging Design Thinking and Generative AI   ·   Duration: 50 minutes   ·   Tools: Design Thinking Studio, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO2 · A3 · A5 — Synthesise information from different sources and stakeholders to fully understand end-user needs.
+
+**The real case**
+
+GE Healthcare's MRI scanners were technically excellent, but designer Doug Dietz watched a small child cry with terror in front of one of his own machines. Up to 80% of paediatric patients had to be sedated to complete a scan — meaning an anaesthetist on standby, longer slots, higher cost and real clinical risk. The engineering brief would have been 'make the scanner quieter'. Dietz reframed it: the problem was not the machine's noise, it was a terrifying experience for a frightened child. The team painted the scanner rooms as pirate ships, jungles and space adventures, and trained operators to narrate the scan as an adventure — 'hold very still while the ship goes through the asteroid field'. Sedation rates dropped dramatically (reported as low as around 10% in redesigned suites) and patient satisfaction rose sharply. Not one component of the scanner's imaging technology was changed.
+
+**Your scenario**
+
+You work for a Singapore polyclinic group. Elderly patients frequently miss or abandon their health screening appointments. The operations team's proposed solution is an SMS reminder system with a confirm button. Screening uptake has not moved in two years despite three reminder revamps.
+
+**What you will do**
+
+Learners practise the reframing move that turns a technical brief into a human one: building an empathy map from the case, extracting a Point of View statement, and generating How Might We questions at the right altitude — neither so broad they are useless nor so narrow they smuggle in the solution.
+
+**What you will produce**
+
+A completed Empathize and Define stage in the Design Thinking Studio: empathy map, POV statement and a voted set of How Might We questions for the polyclinic scenario.
+
+**Step-by-step instructions**
+
+1. Trainer clicks Create New Workspace at https://alfredang.github.io/designthinking/ and shares the workspace code or QR.
+2. Click Join Workspace, enter the code and your display name.
+3. Open the Empathize stage. In Empathy Map, post to Says, Thinks, Does and Feels for an elderly patient who skipped a screening.
+4. Post at least two entries into User Pain Points that are NOT about forgetting the appointment.
+5. Move to the Define stage. In Problem Statement, write a POV: '[User] needs [need] because [insight]'.
+6. In How Might We Questions, post three HMW questions at different altitudes.
+7. Use ChatGPT to generate five more HMW variants, then post only the ones that pass the altitude test.
+8. Vote on the HMW questions using the voting control; the top-voted question carries into Activity 5.
+
+**Discussion questions**
+
+1. The engineering brief was 'make the scanner quieter'. Dietz's brief was different. State both as problem statements and explain what the reframe unlocked.
+2. GE changed the experience, not the technology. In the polyclinic scenario, what is the 'paint the scanner' equivalent — and what is the 'make it quieter' trap?
+3. Write a How Might We that is too broad, one that is too narrow, and one that is just right. What makes the third one workable?
+4. Whose perspective is missing from an empathy map built only from the operations team's data?
+5. Sedation rate was the number that proved the redesign worked. What single number would prove your polyclinic solution worked?
+
+**How you know you are done**
+
+Your Define stage holds a POV statement traceable to a specific empathy-map entry, and a top-voted HMW question that neither names a solution nor is too vague to answer.
+
+**Debrief — what the room should conclude**
+
+Reframing is the highest-leverage move in design thinking and the one teams skip under deadline pressure. 'Make the scanner quieter' produces an incrementally better scanner; 'how might we make a frightened seven-year-old feel brave' produces a pirate ship. Note what did not change: the imaging hardware, the physics, the budget for a new machine. The constraint was the same; the problem statement was different. The altitude test for a How Might We question: if there is only one obvious answer it is too narrow (the solution is hiding inside the question); if you cannot imagine any concrete answer it is too broad. For the polyclinic, the reminder-system framing assumes the barrier is forgetting. If the real barrier is fear of a bad result, fear of cost, or having nobody to accompany them, no reminder will ever fix it — and two years of flat uptake is the evidence.
+
+---
+
+
+### Activity 5 — IDEO Shopping Cart — Volume, Then Judgement
+
+Topic 02: Problem Framing and Ideation: Leveraging Design Thinking and Generative AI   ·   Duration: 50 minutes   ·   Tools: Design Thinking Studio, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO2 · LO4 · A3 — Ideation and brainstorming techniques enhanced by generative AI.
+
+**The real case**
+
+In 1999, ABC's Nightline gave the design firm IDEO five days to redesign the supermarket shopping cart on camera. The team did not start by designing. They went out and observed shoppers, interviewed store managers about theft and maintenance, and talked to a child-safety expert. They then ran structured brainstorms under explicit rules — defer judgement, encourage wild ideas, build on others' ideas, go for quantity, be visual — and generated a large volume of concepts before converging. The result was a modular cart with detachable hand baskets, a child seat designed for safety, and a scanning system that skipped the checkout queue. Crucially it was never meant for mass production; it was a provocation that demonstrated the process. The famous rule from that studio: separate idea generation from idea evaluation, because judging while generating kills the unusual ideas first.
+
+**Your scenario**
+
+Carry forward the top-voted How Might We question from Activity 4. Your team has 25 minutes to generate and converge on ideas for the polyclinic screening challenge, with a GenAI tool available as an idea multiplier.
+
+**What you will do**
+
+Learners run a disciplined divergence–convergence cycle using Crazy 8s and structured brainstorming, amplify it with GenAI, then converge with dot voting — experiencing directly why mixing generation and evaluation suppresses the best ideas.
+
+**What you will produce**
+
+A populated Ideate stage — brainstorming board, Crazy 8s, categorised ideas and a voted shortlist of three concepts to prototype.
+
+**Step-by-step instructions**
+
+1. Open the Ideate stage in the Design Thinking Studio workspace.
+2. Round 1 — silent, manual. Each person posts at least four ideas into Brainstorming Board. No discussion, no judging.
+3. Round 2 — Crazy 8s. Eight rapid variations on the most promising idea, posted into Crazy 8s Ideas.
+4. Round 3 — AI amplification. Prompt: 'Give 15 diverse solution concepts for [your HMW question], including 3 deliberately unconventional ones.'
+5. Post only the AI ideas that add something your group did not already have.
+6. Group everything into themes using Idea Categories.
+7. Dot vote in Voting & Prioritisation and shortlist the top three concepts.
+8. Record in the workspace which of the three shortlisted ideas came from a human and which from the AI.
+
+**Discussion questions**
+
+1. IDEO's rules include 'defer judgement' and 'encourage wild ideas'. What actually happens in a meeting when these are not enforced?
+2. You generated ideas manually, then with AI. Compare the two sets — which was more diverse, and which was more useful?
+3. The cart was never mass-produced. What is the value of a prototype that was never meant to ship?
+4. Under what conditions does GenAI reduce the diversity of ideas in a room instead of increasing it?
+5. Who should have the final vote on which idea proceeds — and what does that choice say about your organisation?
+
+**How you know you are done**
+
+Your Ideate stage shows a clear divergence phase and a separate convergence phase, with three shortlisted concepts and their provenance recorded.
+
+**Debrief — what the room should conclude**
+
+Two effects usually show up in the room. First, the manual round produces fewer ideas but more surprising ones, because they come from lived context the model does not have; the AI round produces more ideas but they cluster around the conventional centre of the training distribution. The productive pattern is manual-first, then AI to extend — running AI first anchors everyone to its framing and measurably narrows the room. Second, groups that skip the 'defer judgement' rule converge far too early on the safe idea. The IDEO cart matters precisely because it was never shipped: a prototype's job is to make an idea arguable and testable, not to be the final answer. Dot voting is not democracy for its own sake — it surfaces which ideas the group can actually rally behind before anyone spends money.
+
+---
+
+
+### Activity 6 — Rapid Prototyping with AI — From Concept to Testable Artefact in One Hour
+
+Topic 02: Problem Framing and Ideation: Leveraging Design Thinking and Generative AI   ·   Duration: 50 minutes   ·   Tools: Design Thinking Studio, ChatGPT or Microsoft Copilot, Adobe Firefly (optional)
+
+**Learning outcome addressed**
+
+LO2 · LO4 · A4 — Prototyping with AI-driven tools: rapid development and feedback.
+
+**The real case**
+
+A Singapore hospital team needed to test whether a self-service kiosk would cut queue times at an outpatient clinic. A scoped software build would have taken a quarter and a budget. Instead the team used a GenAI tool to draft the screen copy and flow, printed the screens on paper, and ran a 'Wizard of Oz' test in the clinic corridor — a staff member behind a curtain swapped the paper screens by hand while real patients used it. Within two days they learned that elderly patients did not fail at the touchscreen — they abandoned at the point where the kiosk asked for an NRIC, because they were not sure whether it was safe to enter it in public view. That single insight redirected the entire design, and it cost nothing but paper and two afternoons. Had they built the software first, they would have discovered it after the budget was spent.
+
+**Your scenario**
+
+Take the top-voted concept from Activity 5. You have 50 minutes to make it testable by a real person — not to build it.
+
+**What you will do**
+
+Learners use GenAI to draft prototype content and user flows, assemble a low-fidelity prototype, and define an explicit test plan with falsifiable assumptions — practising 'build to think' rather than 'build to ship'.
+
+**What you will produce**
+
+A low-fidelity prototype (paper, slide or wireframe) with a written test plan, listed assumptions and the criteria that would prove the concept wrong.
+
+**Step-by-step instructions**
+
+1. Open the Prototype stage in the Design Thinking Studio workspace.
+2. Post your concept in one paragraph into Prototype Description.
+3. Prompt the AI: 'Draft the user flow and screen-by-screen copy for [your concept]. Flag the three steps most likely to cause drop-off.'
+4. Post the flow into User Flow and the key screens into Screens / Wireframes.
+5. List every assumption your concept depends on in Assumptions — be ruthless.
+6. Optionally use Adobe Firefly to generate a visual for the concept.
+7. Move to the Test stage and write a Test Plan: who you would test with, the task you would set, and what result would prove you wrong.
+8. Swap workspaces with another group, run their prototype as a user, and post honest feedback into their User Feedback section.
+
+**Discussion questions**
+
+1. The kiosk team learned the real barrier was privacy, not usability. Which of your assumptions, if wrong, would sink your concept fastest?
+2. What is the cheapest possible artefact that would still generate a real reaction from a real user?
+3. 'Build to think, not to ship.' What is the risk of a prototype that looks too polished?
+4. Where did GenAI genuinely save time here, and where would relying on it have hidden the privacy insight?
+5. Write the one question you would ask a test user that could prove your concept wrong.
+
+**How you know you are done**
+
+Your prototype can be run by someone from another group without you explaining it, and your test plan states in advance what result would falsify the concept.
+
+**Debrief — what the room should conclude**
+
+A prototype's purpose is to buy information at the lowest possible price. The kiosk team bought a quarter's worth of learning for two afternoons and a stack of paper. Note the specific trap in polished prototypes: when an artefact looks finished, test users critique surface details and politely withhold fundamental objections — a rough paper screen invites honest reaction in a way a clean mockup does not. GenAI is genuinely excellent at the drafting layer here: screen copy, flow logic, edge cases, even the interview script. What it cannot do is stand in the corridor and watch a 74-year-old hesitate over her NRIC. Every prototype should ship with its falsification criteria written down in advance; a test you cannot fail is a demonstration, not a test.
+
+---
+
+
+### Activity 7 — Spotify — Reading a Scaling Model Honestly
+
+Topic 03: Agile Development and AI for Rapid Solution Delivery   ·   Duration: 45 minutes   ·   Tools: Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO3 · A7 · K5 — Agile frameworks for managing innovation projects; project management tools and techniques.
+
+**The real case**
+
+In 2012 Henrik Kniberg and Anders Ivarsson published a paper describing how Spotify organised engineering into Squads, Tribes, Chapters and Guilds. It spread worldwide as 'the Spotify Model' and was copied by hundreds of organisations. What most of those organisations missed was the disclaimer in the paper itself: it was a snapshot of a journey, not a framework, and Spotify had already moved on. Kniberg later stated plainly that Spotify does not use 'the Spotify Model' and that people should not copy it. Organisations that copied the structure — renaming teams 'squads' and departments 'tribes' — routinely failed to copy the culture of trust and autonomy that made it work, and ended up with the same hierarchy under new labels. The lesson: practices without principles are a short-lived Band-Aid.
+
+**Your scenario**
+
+Your management team has returned from a conference and wants to 'implement the Spotify Model' across three departments by the end of the quarter. You have been asked to write the implementation plan.
+
+**What you will do**
+
+Learners examine the most-copied agile scaling model in the industry and diagnose why structural copying fails, then distinguish the transferable principles from the non-transferable artefacts — the core skill in leading design thinking and agile projects across an organisation.
+
+**What you will produce**
+
+A Padlet board separating Spotify's transferable principles from its non-transferable structures, and a one-page counter-proposal to the 'implement it by Q4' instruction.
+
+**Step-by-step instructions**
+
+1. Rejoin the Padlet classroom board and open the Activity 7 section.
+2. Read the Spotify case in the Learner Guide (Activity 7) with your group.
+3. In the sub-section 'Structures', post the parts of the model that are organisational artefacts.
+4. In the sub-section 'Principles', post the underlying beliefs that made those artefacts work.
+5. Ask ChatGPT: 'What conditions must be true in an organisation for autonomous squads to outperform a functional hierarchy?' and evaluate its answer critically.
+6. Draft your counter-proposal: one team, one quarter, one measurable outcome. Post it.
+7. Read another group's counter-proposal and comment with the biggest risk you see in it.
+
+**Discussion questions**
+
+1. Spotify's own authors say do not copy it. Why did hundreds of organisations copy it anyway?
+2. Separate the list: which parts of the model are structures (copyable) and which are cultures (not directly copyable)?
+3. 'Practices without principles are a short-lived Band-Aid. And principles without practices are a fruitless exercise in philosophy.' Give a workplace example of each failure mode.
+4. Your management wants it done by Q4. Write the one question that reframes the request without being insubordinate.
+5. How might GenAI help you assess organisational readiness before a rollout — and what would it get wrong?
+
+**How you know you are done**
+
+Your board cleanly separates structure from principle, and your counter-proposal names one team, one outcome and one metric rather than an organisation-wide rollout.
+
+**Debrief — what the room should conclude**
+
+Renaming a department a 'tribe' changes nothing; devolving budget authority to it changes everything. The copyable parts are the visible artefacts — squad names, chapter structures, guild meetings. The parts that actually generated the results are autonomy backed by real decision rights, alignment through a clear mission, and a tolerance for teams choosing different practices. Those cannot be installed by reorganisation chart. The professional move when handed 'implement it by Q4' is not refusal but reframing: ask what outcome the leadership team actually wants — faster delivery, better retention, fewer handoffs — and then propose the smallest change that could plausibly move it, run in one team first. PremierAgile's guidance applies directly: start small, low-risk and high-value, one to three attempts before scaling.
+
+---
+
+
+### Activity 8 — From Hills to Backlog — Converting Ideas into Stories with GenAI
+
+Topic 03: Agile Development and AI for Rapid Solution Delivery   ·   Duration: 55 minutes   ·   Tools: Design Thinking Studio, Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO3 · LO4 · K5 — Converting ideas into agile features, stories and tasks with GenAI; project management tools and techniques.
+
+**The real case**
+
+IBM runs a two-day Design Thinking and Agile workshop in which Day 1 produces 'Hills' — outcome statements in the form 'As a [who], I want [what], so that [wow]' — and Day 2 converts them into 20–30 user stories, prioritises them into three releases and sizes them with Planning Poker. In one documented session, a manufacturing user's need for inventory data started as a vague 'in minutes'. The team pushed until it became '5 minutes', and the justification made the requirement real: the data had to be available before the morning manager meeting. That specificity is what separates an outcome you can test from an aspiration you cannot. IBM prioritises releases as 'Cupcake, Birthday Cake, Wedding Cake' — where the cupcake is a complete, satisfying cake at small scale, not a slice of an unfinished one.
+
+**Your scenario**
+
+Take the prototype concept your group validated in Activity 6. Your product trio — product manager, designer, engineer — now has one hour to turn it into a release-one backlog that a delivery team could actually start on Monday.
+
+**What you will do**
+
+Learners write a measurable Hill, use GenAI to expand it into user stories with acceptance criteria, critique and correct the AI output, prioritise into the three-cake release model and size the stories with relative estimation.
+
+**What you will produce**
+
+A prioritised release-one backlog: one Hill, 8–12 user stories with acceptance criteria, a Cupcake/Birthday/Wedding split and story-point estimates.
+
+**Step-by-step instructions**
+
+1. Open the Padlet classroom board, Activity 8 section.
+2. Write ONE Hill for your concept: 'As a [who], I want [what], so that [wow]'. Make the wow measurable.
+3. Post the Hill and have another group challenge its measurability. Revise it.
+4. Prompt the AI: 'Convert this Hill into 10 user stories in the form As a/I want/so that, each with 2-3 testable acceptance criteria.'
+5. Review every story. Delete the ones that assume something you never validated. Rewrite the weak acceptance criteria.
+6. Split the surviving stories into Cupcake, Birthday Cake and Wedding Cake releases.
+7. Size the Cupcake stories using relative points (1, 2, 3, 5, 8) — discuss any estimate where the group differs by more than two cards.
+8. Post your final release-one backlog to Padlet and Like the backlog you would most want to inherit as a developer.
+
+**Discussion questions**
+
+1. Compare a Hill ('so that [wow]') with a user story ('so that [reason]'). What does the Hill capture that the story loses?
+2. The team pushed 'in minutes' to '5 minutes'. What forced the specificity, and what would have happened without it?
+3. Review the AI-generated stories. What did it get structurally right, and what did it get wrong about your context?
+4. Explain 'Cupcake' to someone who thinks an MVP is 'version one with features removed'. Where is the difference?
+5. Story points measure size and complexity, not duration. Why does the distinction matter for a team's velocity?
+
+**How you know you are done**
+
+Your Cupcake release is genuinely shippable and useful on its own, every story has testable acceptance criteria, and you can point to which stories you deleted from the AI output and say why.
+
+**Debrief — what the room should conclude**
+
+GenAI is genuinely good at the mechanical layer of this task — it produces well-formed stories with plausible acceptance criteria in seconds, and it rarely forgets the syntax. What it cannot supply is context: your constraints, your regulatory environment, your legacy integration, your users' actual tolerance for change. The reliable pattern is AI drafts, humans decide. Watch for the two characteristic AI failures in the room: stories that are technically well-formed but describe features nobody validated, and acceptance criteria that restate the story instead of defining a testable condition. On the cake model — the point of the cupcake is that a person could genuinely enjoy it and it stands alone. A slice of unfinished wedding cake is not a smaller product, it is a broken one, and shipping it teaches you nothing except that users dislike broken things.
+
+---
+
+
+### Activity 9 — Running Dual-Track Agile — A Sprint Simulation with AI Assistance
+
+Topic 03: Agile Development and AI for Rapid Solution Delivery   ·   Duration: 50 minutes   ·   Tools: Padlet Classroom Board, Design Thinking Studio, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO3 · LO1 · A7 · K5 — Using generative AI for faster iterations and feedback in agile sprints; lead design thinking projects.
+
+**The real case**
+
+Marty Cagan describes the most common failure he sees in teams that believe they are agile: 'many people essentially doing little mini-waterfalls within their Scrum framework' — the product manager writes requirements, hands them to a designer who produces annotated wireframes, who hands them to a delivery team to build and test. Each handoff looks like collaboration and is actually a queue. The dual-track alternative runs discovery and delivery simultaneously in one team: the product trio continuously validates ideas cheaply while the delivery track builds the already-validated ones. Jeff Patton's line is the justification: 'The most expensive way to test your idea is to build production quality software.' Discovery's job is to kill ideas cheaply — 'if we're doing discovery right, we substantially change and kill lots of ideas.'
+
+**Your scenario**
+
+Your team is running Sprint 1 on the Cupcake release from Activity 8. Mid-sprint, a stakeholder arrives with an urgent new request and a competitor announcement. You must decide what happens to the sprint, the backlog and the discovery track.
+
+**What you will do**
+
+Learners simulate a compressed sprint — planning, a daily stand-up, a mid-sprint disruption, a review and a retrospective — running a discovery track in parallel, and use GenAI to accelerate the administrative parts of the ceremonies without surrendering the decisions.
+
+**What you will produce**
+
+A completed sprint simulation record: sprint goal, committed backlog, stand-up notes, a documented disruption decision, review outcome and an AI-assisted retrospective with three actions.
+
+**Step-by-step instructions**
+
+1. Assign roles in your group: Product Owner, Scrum Master, and 2-3 Developers.
+2. Sprint Planning — agree a one-sentence sprint goal and pull Cupcake stories that fit. Post to Padlet.
+3. Run a 3-minute stand-up: each person states progress, next step and blockers.
+4. The trainer introduces the mid-sprint disruption. Decide as a team: absorb, defer, or swap. Document the decision AND the reasoning.
+5. In parallel, run the discovery track — open the Test stage in the Design Thinking Studio and log what you would validate before the new request enters a sprint.
+6. Sprint Review — present your Cupcake increment to another group acting as stakeholders and capture their feedback.
+7. Retrospective — each person posts one Keep, one Drop, one Try. Then ask the AI to cluster the themes.
+8. Compare the AI's clustering with your own reading of the room, and agree three concrete actions.
+
+**Discussion questions**
+
+1. A stakeholder interrupts mid-sprint. What are your options, and what does each one cost in trust, focus and delivery?
+2. Cagan calls handoffs 'little mini-waterfalls'. Where do handoffs disguised as collaboration happen in your organisation?
+3. Discovery's job is partly to kill ideas. Why is killing an idea a success, and why do organisations rarely reward it?
+4. Which ceremony did GenAI genuinely improve, and which one would it damage if you let it run unsupervised?
+5. Your velocity drops because the team spent time on discovery. How do you explain that to a manager who only tracks delivery?
+
+**How you know you are done**
+
+Your sprint record shows a protected sprint goal, a documented and justified disruption decision, and three retrospective actions with named owners.
+
+**Debrief — what the room should conclude**
+
+The disruption is the real lesson. Teams that protect the sprint goal and route the new request into the discovery track keep both their focus and their responsiveness; teams that swap scope mid-sprint lose the sprint and teach stakeholders that interrupting works. Note the asymmetry — the request does not have to wait long, it just has to be validated before it displaces committed work. On AI in ceremonies: it is excellent at summarising stand-up notes, clustering retrospective themes and drafting the sprint report, and it is actively harmful if it runs the retrospective itself, because the value of a retrospective is the team saying uncomfortable things to each other, not a tidy summary. Watch for velocity anxiety: a team doing genuine discovery will show lower delivery velocity and higher decision quality, which is only a problem if the organisation measures the wrong one.
+
+---
+
+
+### Activity 10 — DBS Bank — Scaling Innovation Across 25,000 People
+
+Topic 04: Scaling and Sustaining Innovations with Agile Design Thinking and Generative AI   ·   Duration: 50 minutes   ·   Tools: Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO4 · A2 · A6 · K2 · K3 — Develop strategies to proliferate design thinking across the organisation; drivers of organisational growth.
+
+**The real case**
+
+Around 2014 DBS Bank set out to 'Make Banking Joyful' and to become a technology company delivering banking. Rather than launching an innovation lab and hoping it spread, DBS changed the operating system: it ran large-scale hackathons pairing bankers with start-ups, trained thousands of staff in customer journey thinking, moved the majority of its technology in-house from outsourced vendors, and adopted the discipline of measuring customer time saved — reporting tens of millions of customer hours eliminated from waiting and rework. Senior leaders were required to participate, not merely sponsor. DBS was subsequently named the world's best bank by multiple international publications. The instructive part is not the awards but the mechanism: DBS changed what got measured, who had authority, and what leaders personally did — and let the culture follow.
+
+**Your scenario**
+
+You have run one successful design thinking pilot in your department. Your director is impressed and asks you to 'roll it out to the whole division' — 400 people — with no additional budget and no change to existing KPIs.
+
+**What you will do**
+
+Learners analyse how a large regulated organisation actually scaled human-centred innovation, and build a realistic scaling plan that changes measurement, authority and leadership behaviour rather than merely running more training.
+
+**What you will produce**
+
+A one-page scaling plan for the learner's own organisation covering the first 90 days, the metric that would change, and the leadership behaviour required.
+
+**Step-by-step instructions**
+
+1. Rejoin the Padlet classroom board, Activity 10 section.
+2. Read the DBS case in the Learner Guide (Activity 10) with your group.
+3. Post the three mechanisms DBS used that were NOT training.
+4. For your own organisation, post one metric you would change and what behaviour that change would trigger.
+5. Ask ChatGPT: 'What are the most common failure modes when scaling design thinking in a large regulated organisation?' Evaluate its list against the DBS case.
+6. Draft your 90-day scaling plan: scope, metric, leadership behaviour, first team.
+7. Post it and comment on another group's plan, naming the assumption most likely to break.
+
+**Discussion questions**
+
+1. DBS measured 'customer hours saved'. Why is that a more powerful scaling lever than counting how many staff attended training?
+2. Your director offers no budget and no KPI change. What is the honest risk to the rollout, and how do you surface it professionally?
+3. DBS required leaders to participate rather than sponsor. What is the practical difference, and which does your organisation do?
+4. Which is harder to scale — the method, the mindset, or the authority to act on what you learn? Defend your ranking.
+5. Where would GenAI genuinely accelerate a 400-person rollout, and where would it create the illusion of progress?
+
+**How you know you are done**
+
+Your plan changes at least one measurement and one authority, not just the training calendar, and its scope is small enough to be real.
+
+**Debrief — what the room should conclude**
+
+Training 400 people produces 400 people who know the vocabulary and cannot use it, unless three other things change: what gets measured, who is allowed to decide, and what senior leaders visibly do. DBS's customer-hours-saved metric is instructive because it is a customer-value measure that the whole organisation could act on, unlike a training-completion count, which measures activity and changes nothing. The honest answer to the no-budget no-KPI-change instruction is that the rollout will produce awareness without behaviour — and the professional way to say so is to propose a smaller scope with a real metric attached rather than to accept an unachievable one. GenAI can genuinely help with scale here: producing training material, synthesising feedback from 400 people, spotting where teams are stuck. It cannot manufacture the authority that makes the method usable.
+
+---
+
+
+### Activity 11 — Boeing 737 MAX — Systems Thinking and the Cost of Local Optimisation
+
+Topic 04: Scaling and Sustaining Innovations with Agile Design Thinking and Generative AI   ·   Duration: 50 minutes   ·   Tools: Design Thinking Studio, Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO4 · K2 · K4 — Systems thinking, feedback loops and causality; concept and principles of resource management.
+
+**The real case**
+
+Boeing needed a fast, cheap answer to the Airbus A320neo. Fitting larger engines to the existing 737 airframe changed the aircraft's pitch behaviour, so Boeing added MCAS, software that automatically pushed the nose down. Each decision was locally rational: reuse the airframe to save cost and time; solve the aerodynamic consequence in software; keep the aircraft under the same type rating so airlines would not need expensive pilot simulator training; therefore minimise what pilots were told about MCAS. Two crashes killed 346 people and the fleet was grounded worldwide for around 20 months. No single decision was insane in isolation. The system of decisions — commercial pressure, a reused airframe, a software patch, and a training omission driven by the commercial goal — was lethal. This is what a reinforcing feedback loop with no effective balancing loop looks like in practice.
+
+**Your scenario**
+
+Your organisation is under pressure to ship an AI-assisted feature before a competitor. Each team is optimising its own deliverable. You have been asked to review the programme for systemic risk.
+
+**What you will do**
+
+Learners map a real systemic failure using interconnectedness, feedback loops and causality, then apply the same mapping to an AI-driven innovation programme to identify where local optimisation is producing global risk.
+
+**What you will produce**
+
+A causal loop map of the 737 MAX decision chain, and a systemic risk register for the learner's own AI-assisted programme.
+
+**Step-by-step instructions**
+
+1. Open the Padlet classroom board, Activity 11 section.
+2. Read the 737 MAX case in the Learner Guide (Activity 11).
+3. On paper or in the workspace, draw the decision chain as a loop: each node is a decision, each arrow is 'made necessary'.
+4. Mark on your loop the single point where a balancing mechanism would have had the most leverage.
+5. Post a photo or description of your loop to Padlet.
+6. Now map YOUR AI-assisted programme the same way. Identify one reinforcing loop with no balancing counterpart.
+7. Ask ChatGPT to argue why your proposed balancing mechanism would be resisted, and prepare your response.
+8. Post your systemic risk register entry: the loop, the leverage point, the mechanism, and who has authority to trigger it.
+
+**Discussion questions**
+
+1. Trace the chain: which decision made the next one seem necessary? Where could one balancing loop have broken it?
+2. Every decision was locally rational. What does that tell you about relying on individual good judgement as a safety mechanism?
+3. Who in the system had the information to see the whole picture, and what stopped that information from changing the outcome?
+4. Apply the same analysis to an AI-driven innovation programme. Where does speed pressure create a comparable blind spot?
+5. What is the systems-thinking equivalent of 'the scanner is too loud' — the local fix that hides the real problem?
+
+**How you know you are done**
+
+Your loop map shows causality rather than a timeline, and your risk register names a mechanism with a named owner who has authority to stop work.
+
+**Debrief — what the room should conclude**
+
+Systems thinking is not an abstract philosophy; it is the discipline that catches failures no individual decision-maker can see. The 737 MAX chain is a textbook reinforcing loop: commercial urgency drove airframe reuse, which drove the software fix, which drove the training omission, each step justified by the previous one, with no balancing loop strong enough to interrupt it. Note who could have interrupted it — regulators, test pilots, engineers — and what neutralised them: delegated certification, schedule pressure, and a framing in which raising the concern meant arguing against the commercial case. For AI programmes the parallel is direct. Speed pressure produces a model shipped without evaluation, then a guardrail bolted on, then a monitoring gap because monitoring would slow the launch. The countermeasure is structural, not attitudinal: a named balancing mechanism with the authority to stop the line.
+
+---
+
+
+### Activity 12 — Innovation Metrics — Designing KPIs That Change a Decision
+
+Topic 04: Scaling and Sustaining Innovations with Agile Design Thinking and Generative AI   ·   Duration: 45 minutes   ·   Tools: Padlet Classroom Board, ChatGPT or Microsoft Copilot
+
+**Learning outcome addressed**
+
+LO4 · A4 · K3 · K4 — Metrics and KPIs for measuring the success of innovation projects; resource management.
+
+**The real case**
+
+Two innovation programmes reported to the same board. Programme A reported ideas submitted, workshops run, staff trained and prototypes built — all rising quarter on quarter. Programme B reported one number: the change in the time it took a customer to complete an application, and the resulting drop in abandoned applications. When budgets tightened, Programme A could not answer the question 'what decision would we make differently if this number moved?' and was cut. Its metrics measured activity, not consequence. Douglas Hubbard's test is the sharpest available: 'If a measurement matters at all, it is because it must have some conceivable effect on decisions and behaviour.' Thoughtworks adds the distinction most teams miss — validating that a problem is real, that a solution works, and that there is demand for it are three separate concerns needing three different tests.
+
+**Your scenario**
+
+You must present your innovation programme to a board that is deciding next year's budget. You have one slide and four numbers.
+
+**What you will do**
+
+Learners audit vanity metrics against Hubbard's decision test, build a balanced measurement set spanning customer, business and societal value, and separate problem, solution and demand validation.
+
+**What you will produce**
+
+A four-metric innovation scorecard where every metric passes the decision test, plus a stated validation plan distinguishing problem, solution and demand.
+
+**Step-by-step instructions**
+
+1. Open the Padlet classroom board, Activity 12 section.
+2. List every metric your organisation currently uses to judge innovation. Be honest.
+3. Apply Hubbard's test to each: 'what decision would change if this number moved?' Strike out every metric that fails.
+4. Ask the AI: 'Propose 10 KPIs for an innovation programme, split into customer value, business value and societal value.'
+5. Apply the decision test to the AI's list too. Note how many fail.
+6. Build your four-metric scorecard: one customer, one business, one societal, one leading indicator.
+7. For your concept, write one test each for problem validation, solution validation and demand validation.
+8. Post your scorecard and challenge one metric on another group's board using Hubbard's test.
+
+**Discussion questions**
+
+1. Apply Hubbard's test to 'number of ideas submitted'. What decision would change if it doubled? If none, why is it still so popular?
+2. Separate problem validation, solution validation and demand validation. Give one test for each for your own concept.
+3. Which is harder to measure — customer value, business value or societal value — and what happens when you only measure the easy one?
+4. Your board wants a single number. What do you lose by giving them one, and how do you manage that?
+5. How could GenAI help build this scorecard, and how could it help you fool yourself with it?
+
+**How you know you are done**
+
+Every metric on your scorecard has a stated decision attached to it, and your three validation tests are genuinely different tests rather than three versions of the same one.
+
+**Debrief — what the room should conclude**
+
+Almost every group's first draft contains at least one activity metric — ideas submitted, workshops run, people trained — because they are easy to collect and always go up. Hubbard's test kills them on contact: if no plausible movement in the number would change any decision, the number is decoration and it will not survive a budget review. The three-validation split is the other common gap: a successful prototype test proves the solution works for people who already have the problem, and says nothing about how many people have it or whether they will pay. Teams routinely present solution-validation evidence as if it were demand evidence, which is how confidently-built products launch to silence. On GenAI: it will happily generate a plausible, well-formatted scorecard in seconds, and that fluency is precisely the risk — a metric set that looks professional and measures nothing consequential is harder to challenge than an obviously bad one.
+
+---
+
+
+## Consolidating Your Learning
+
+
+- You may use this Learner Guide, the course slides, your activity briefs and any approved material.
+
+**What to revise**
+
+- The three mindsets and the question each answers — Design Thinking, Lean and Agile.
+- The Double Diamond, and which question each diamond answers.
+- The five stages of design thinking and what happens in each.
+- The difference between a problem statement, a Point of View and a How Might We question, and the altitude test.
+- The Problem-Assumption Model's four questions.
+- Empathy map quadrants, and why the say/do contradiction matters.
+- Dual-track agile: the two tracks, what each asks, and the mini-waterfall anti-pattern.
+- The decomposition ladder from Epic to Task, and the difference between a Hill and a user story.
+- Story points versus duration, and how velocity is counted.
+- The three-cake release model and what makes a Cupcake a whole cake.
+- Reinforcing versus balancing feedback loops.
+- The metric decision test, and the three separate validations (problem, solution, demand).
+- Where generative AI genuinely helps in the loop, and where it must not be trusted.
+
+
+
 
 
 ## Glossary
 
-- **Agile** — An iterative approach to delivering value in small increments, inspecting and adapting frequently rather than following one big up-front plan.
-- **Scrum** — The most common Agile framework, with fixed roles, events and artifacts organised around short iterations called sprints.
-- **Sprint** — A short, fixed-length iteration (commonly 1–4 weeks) in which the team delivers a usable increment toward the product goal.
-- **Product Owner** — The Scrum role accountable for the product backlog, its priority, and maximising the value the team delivers.
-- **Scrum Master** — The Scrum role that facilitates the process, removes impediments, and helps the team improve; the main AI user in several of these labs.
-- **Product backlog** — The ordered, evolving list of everything that might be built — features, fixes and work — from which sprints are planned.
-- **Sprint backlog** — The set of backlog items the team commits to for a sprint, plus the plan (tasks) for delivering them.
-- **User story** — A short, user-centred description of a feature in the form 'As a <role>, I want <goal>, so that <benefit>'.
-- **INVEST** — A checklist for good user stories — Independent, Negotiable, Valuable, Estimable, Small, Testable.
-- **Acceptance criteria** — The conditions, often written Given/When/Then, that a story must meet to be considered done.
-- **Backlog grooming (refinement)** — The ongoing work of clarifying, splitting, merging, estimating and ordering backlog items so they are ready for planning.
-- **MoSCoW** — A prioritisation method sorting work into Must have, Should have, Could have and Won't have (this time).
-- **Story point** — A unit of relative estimate for the effort of a story, used instead of hours to size work by comparison.
-- **Velocity** — The amount of work (usually story points) a team completes per sprint, used as a trend to forecast realistic scope.
-- **Burndown** — A chart or narrative showing how much work remains in a sprint or release over time.
-- **Daily stand-up** — The short daily Scrum event where the team syncs on progress, plans and blockers.
-- **Blocker / impediment** — Anything stopping a team member or story from progressing, which the Scrum Master works to remove.
-- **Dependency** — A relationship where one item, team or external party must be done or available before another can proceed.
-- **Definition of Done** — The team's shared, agreed checklist of what must be true for a story or increment to count as complete.
-- **Retrospective** — The Scrum event at the end of a sprint where the team reflects on how it worked and agrees improvements.
-- **Continuous improvement** — The ongoing inspect-and-adapt practice of making small, owned changes each sprint based on evidence and reflection.
-- **Roadmap** — A higher-level, multi-sprint view of the themes and releases planned over time, kept deliberately flexible.
-- **Release plan** — A plan grouping backlog items into releases with target dates, dependencies and milestones.
-- **Generative AI assistant** — A general-purpose chat tool (ChatGPT, Claude, Gemini) that generates text drafts and analysis from a prompt.
-- **Prompt** — The instruction you give the assistant; a structured prompt with role, context, task, format and constraints produces a far better draft than a vague one.
-- **Prompt library** — A saved, reusable set of prompt templates for the recurring agile tasks, shared across the team.
-- **Human-in-the-loop** — Keeping a person responsible for reviewing, correcting and approving every AI output before it is used.
-- **Hallucination** — A confident but false or invented statement from an AI, which is why every output must be fact-checked.
-- **Responsible AI use** — Using AI safely and ethically — protecting sensitive data, checking facts, being fair, and being transparent about AI assistance.
+- **Acceptance criteria** — Testable conditions that define when a user story is done. Not a restatement of the story.
+- **Agile** — A mindset and set of frameworks for adapting to changing conditions while delivering incrementally.
+- **Balancing loop** — A feedback loop that stabilises a system by counteracting change.
+- **Brainwriting** — Silent, written idea generation used before discussion to prevent anchoring.
+- **Crazy 8s** — An ideation technique producing eight rapid variations in eight minutes.
+- **Cupcake / Birthday Cake / Wedding Cake** — IBM's three-release prioritisation model; each release is a complete product at its own scale.
+- **Design Sprint** — A time-boxed cross-functional activity that takes a big problem to a clear, tested direction which can then feed an agile backlog.
+- **Design Thinking** — A human-centred, solution-based approach to exploring and solving ill-defined problems.
+- **Discovery track** — The continuous validation track in dual-track agile; asks whether we should build something and what exactly.
+- **Delivery track** — The build track in dual-track agile; asks how to build the validated thing well.
+- **Double Diamond** — A model of innovation as two linked diamonds — the problem space and the solution space — each with a diverge and converge phase.
+- **Dual-track agile** — Running discovery and delivery simultaneously within a single product team.
+- **Emergence** — System behaviour that arises from interaction between parts and cannot be predicted from the parts alone.
+- **Empathy map** — A four-quadrant tool capturing what a user says, thinks, does and feels, plus their pains and gains.
+- **Epic** — A large body of work spanning many sprints, decomposed into features and stories.
+- **Hill** — An IBM Design Thinking outcome statement in the form: as a [who], I want [what], so that [wow].
+- **How Might We (HMW)** — A question format that reframes a problem as an invitation to generate solutions.
+- **Hypothesis-Driven Development** — A format for framing outcomes, beliefs and the metrics that would confirm or refute them.
+- **Information radiator** — A highly visible display of project status in the team's workspace (Alistair Cockburn).
+- **Lean Startup** — An approach that validates business ideas cheaply through minimum viable products and customer feedback.
+- **Minimum Viable Product (MVP)** — The smallest product that generates real learning about customer value.
+- **Persona** — A research-grounded representation of a target user's goals, pains, behaviours and context.
+- **Point of View (POV)** — A designable problem statement in the form: [user] needs [need] because [insight].
+- **Product Backlog** — The prioritised list of everything that might be built, owned by the Product Owner.
+- **Product Owner** — The Scrum accountability that owns the product vision, the backlog and prioritisation.
+- **Prototype** — A cheap, low-fidelity artefact built to think with and to test an idea, not to ship.
+- **Reinforcing loop** — A feedback loop that amplifies change, driving a system further in one direction.
+- **Retrospective** — A recurring team meeting to inspect how the team works and commit to changes.
+- **SCAMPER** — An ideation prompt set: Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse.
+- **Scrum** — An agile framework delivering value through short sprints with defined accountabilities, events and artefacts.
+- **Scrum Master** — The Scrum accountability that enables the process, removes impediments and coaches the team.
+- **Sensemaking** — Turning ambiguous, conflicting signals into a shared narrative an organisation can act on.
+- **Sprint** — A fixed-length iteration, typically one to four weeks, producing a potentially shippable increment.
+- **Story point** — A relative measure of the size and complexity of a user story, not its duration.
+- **Systems thinking** — Seeing a problem as a whole system of interconnections, feedback loops and emergent behaviour.
+- **Three C's** — Card, Conversation, Confirmation — the components of a well-formed user story.
+- **User story** — A small unit of value in the form: as a [user], I want [goal], so that [reason].
+- **Vanity metric** — A number that reliably rises but changes no decision.
+- **Velocity** — The amount of fully completed work a team delivers per sprint, used as a planning input.
+- **Wicked problem** — A problem with interconnected layers, no fixed endpoint and no single correct solution (Rittel & Webber, 1973).
+- **Wizard of Oz prototype** — A prototype where a human secretly performs the function, to test behaviour before building.
+
+
+## References and Further Reading
+
+- Schneider, J. — Understanding how Design Thinking, Lean and Agile Work Together. Thoughtworks.
+- Adaptovate — The Relationship Between Design Thinking and Agile.
+- BMC Blogs — Design Thinking vs Lean vs Agile.
+- Burba, D. (2016) — Agile by Design: Integrating Design Thinking and Agile Approaches Helps Organizations Find and Build the Right Customer-Focused Solution. PM Network, 30(10), 58–63.
+- Vukosav, D. (2019) — Design Thinking to Improve Your Agile Process. PMI Global Congress EMEA, Dublin.
+- UX Magazine — Agile and Design Thinking: How Can They Go Well Together.
+- Perkins, S. — Agile & Design Thinking: Competing or Completing? The Design Gym.
+- PremierAgile — Design Thinking vs Agile.
+- Startup Frontier (Medium) — How to Combine Design Thinking and Agile in Practice.
+- Rittel, H. & Webber, M. (1973) — Dilemmas in a General Theory of Planning (wicked problems).
+- Sy, D. (2007) — Adapting Usability Investigations for Agile User-Centered Design.
+- Patton, J. — Dual Track Development is not Duel Track.
+- Cagan, M. — Dual-Track Agile. Silicon Valley Product Group.
+- Liedtka, J. — Seven-year study of design thinking in practice, University of Virginia Darden School.
+- Hubbard, D. W. — How to Measure Anything: Finding the Value of Intangibles in Business.

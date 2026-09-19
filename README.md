@@ -1,176 +1,83 @@
-<div align="center">
-
 # Generative AI for Agile Project Management
 
-[![Course](https://img.shields.io/badge/Course-C324-1f6feb?style=for-the-badge)](https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html)
-[![Duration](https://img.shields.io/badge/Duration-2_days_15_instructional_hours-5E5E5E?style=for-the-badge)](#course-toolkit)
-[![Labs](https://img.shields.io/badge/Labs-12-34d399?style=for-the-badge)](labs/README.md)
-[![License](https://img.shields.io/badge/License-Educational-fbbf24?style=for-the-badge)](#license)
+A two-day, case-study driven course on applying design thinking, agile practice and generative AI to drive innovation — from framing the right problem to scaling it across an organisation.
 
-**A connected, hands-on course in Generative AI for Agile Project Management — progress through 12 practical labs from Set Up Your AI Toolkit for Agile Project Management to Run an AI-Assisted Retrospective and Plan Continuous Improvement.**
+| Course detail | Information |
+|---|---|
+| Course code | `C324` |
+| Programme | Non-WSQ |
+| Duration | 2 days · 15 instructional hours (9:30am – 5:30pm) |
+| Registration | [View course details and register](https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html) |
+| Provider | Tertiary Infotech Academy Pte Ltd (UEN 201200696W) |
 
-[📘 Course Page](https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html) · [🧪 Hands-On Labs](labs/README.md) · [📖 Learner Guide](<LG-Generative AI for Agile Project Management (C324).md>) · [🐛 Report Bug](https://github.com/tertiarycourses/C324---Generative-AI-for-Agile-Project-Management/issues) · [💡 Request Feature](https://github.com/tertiarycourses/C324---Generative-AI-for-Agile-Project-Management/issues)
+## About the course
 
-</div>
+This course teaches innovation as a disciplined practice rather than a brainstorming exercise. Learners work through the Double Diamond and the five stages of design thinking, learn to frame problems before solving them, validate ideas cheaply, deliver them with agile discipline, and scale them without losing the evidence that made them work.
 
-> [!NOTE]
-> **These are the official hands-on lab materials for the commercial course:**
-> ### 🎓 Generative AI for Agile Project Management
-> **Course Code:** `C324` · by Tertiary Courses / Tertiary Infotech<br>
-> **Duration:** 2 days · 15 instructional hours<br>
-> **Course page:** https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html
+Generative AI runs throughout as an accelerator — drafting personas, expanding backlogs, summarising research — always paired with explicit critique of where AI genuinely helps and where it produces the plausible rather than the true.
 
----
+Twelve real-world case studies anchor the theory: Airbnb, Netflix vs Blockbuster, GE Healthcare, IDEO, Spotify, IBM, DBS Bank and Boeing.
 
-## Lab Activities
+## Learning outcomes
 
-The 12 labs form one connected practical journey. Complete them in order so each verified output can support the activities that follow.
+On completion of this course, learners will be able to:
 
-| # | Activity | Outcome |
-|---:|----------|---------|
-| **1** | [Set Up Your AI Toolkit for Agile Project Management](labs/lab-01-set-up-your-ai-toolkit-for-agile-project-management.md) | Sign in to ChatGPT, Claude and Gemini, give the same agile task to each, compare their drafts, and set up your Tempo 2.0 workspace and the human-in-the-loop review habit that every later lab depends on. |
-| **2** | [Write Effective Prompts and Build an Agile Prompt Library](labs/lab-02-write-effective-prompts-and-build-an-agile-prompt-library.md) | Learn the role-context-task-format-constraints structure for agile prompts, refine a weak prompt into a strong one, and save a reusable agile prompt library you will use for the rest of the course. |
-| **3** | [Apply Responsible, Human-in-the-Loop AI Practices](labs/lab-03-apply-responsible-human-in-the-loop-ai-practices.md) | Build a responsible-AI checklist for agile work and apply it — catching an invented 'fact', rewriting a prompt to protect sensitive data, and confirming a draft is fair, clear and owned by a human. |
-| **4** | [Draft and Refine User Stories and Acceptance Criteria](labs/lab-04-draft-and-refine-user-stories-and-acceptance-criteria.md) | Turn raw Tempo 2.0 feature ideas into INVEST-quality user stories with AI, then draft and refine testable acceptance criteria, reviewing every one so it reflects the real user and real value. |
-| **5** | [Groom and Prioritise the Product Backlog with AI](labs/lab-05-groom-and-prioritise-the-product-backlog-with-ai.md) | Use AI to groom a messy raw backlog — clarifying, splitting, merging and de-duplicating items — then prioritise it with MoSCoW and value-versus-effort, keeping the final ordering a human decision. |
-| **6** | [Plan the Sprint, Estimate, and Build the Release Roadmap](labs/lab-06-plan-the-sprint-estimate-and-build-the-release-roadmap.md) | Use AI to propose a sprint goal and candidate sprint backlog from the team's capacity, get relative estimates with their assumptions surfaced, and draft a multi-sprint roadmap and release plan — with the team owning every… |
-| **7** | [Summarise Stand-ups and Track Sprint Progress](labs/lab-07-summarise-stand-ups-and-track-sprint-progress.md) | Turn raw daily stand-up notes into a clear, consistent summary with AI, then track progress against the sprint goal and draft a plain-language burndown narrative — keeping the team's read of reality in the loop. |
-| **8** | [Identify Risks, Blockers and Dependencies with AI](labs/lab-08-identify-risks-blockers-and-dependencies-with-ai.md) | Use AI to read the team's notes and backlog and surface likely risks, blockers and dependencies early, map how the work depends on itself and on outside parties, and turn each into a mitigation and escalation the Scrum Master… |
-| **9** | [Assist Documentation, Communication and Testing](labs/lab-09-assist-documentation-communication-and-testing.md) | Use AI to draft the sprint's routine documentation, tailor the same update for different audiences, and generate test scenarios and a definition-of-done check from acceptance criteria — reviewing each so quality stays the team's… |
-| **10** | [Generate Status Reports and a Delivery Dashboard](labs/lab-10-generate-status-reports-and-a-delivery-dashboard.md) | Use AI to turn sprint data and notes into a clear status report pitched for its reader, and to design and describe a simple delivery dashboard with the narrative that explains what the numbers mean. |
-| **11** | [Analyse Velocity and Metrics with AI](labs/lab-11-analyse-velocity-and-metrics-with-ai.md) | Use AI to analyse past sprint data — velocity trend, throughput, cycle time and completion rate — to forecast realistic scope, and to interpret the metrics honestly as signals for conversation, not targets to game. |
-| **12** | [Run an AI-Assisted Retrospective and Plan Continuous Improvement](labs/lab-12-run-an-ai-assisted-retrospective-and-plan-continuous-improve.md) | Use AI to design a retrospective, theme the team's anonymised input into patterns, surface candid discussion points, and turn the themes into a small set of specific, owned, time-bound improvement actions — completing the… |
+1. Integrate design thinking methodologies and agile principles to drive organisational innovation using generative AI.
+2. Synthesise stakeholder inputs to uncover end-user needs for successful innovation.
+3. Lead design thinking projects using project management tools and techniques to enhance organisational performance.
+4. Develop strategies for agile design thinking to enhance product and service innovation.
 
----
+## Topics covered
 
-## About
+| # | Topic | Focus |
+|---|---|---|
+| 1 | Foundations of Design Thinking, Agile and Generative AI | The three mindsets, the Double Diamond, the five stages, wicked problems, where GenAI accelerates the loop |
+| 2 | Problem Framing and Ideation | The Problem-Assumption Model, POV vs How Might We, the altitude test, empathy maps, personas, ideation, prototyping to think |
+| 3 | Agile Development and AI for Rapid Solution Delivery | Being vs doing agile, the Scrum loop, dual-track agile, the decomposition ladder, user stories, story points, GenAI across the sprint |
+| 4 | Scaling and Sustaining Innovations | The three levers that scale innovation, stakeholder buy-in, sensemaking, systems thinking, innovation metrics and KPIs |
 
-This repository contains the complete lab and courseware package for **Generative AI for Agile Project Management** (**C324**) by Tertiary Courses / Tertiary Infotech. The practical activities build progressively from **Set Up Your AI Toolkit for Agile Project Management** to **Run an AI-Assisted Retrospective and Plan Continuous Improvement**, with explicit checks that help learners verify each result before moving on.
+## Activities
 
-### What you'll learn
+Twelve real-world case-study activities. Each folder contains the brief as Markdown and as a print-ready PDF, carrying the documented case, the workplace scenario, step-by-step instructions, discussion questions, the completion check and the trainer debrief.
 
-- Complete **12 connected hands-on activities** and carry their outputs through one coherent learning journey.
-- Practise with **ChatGPT · Claude · Google Gemini · Google Workspace** and the supporting resources supplied in the repository.
-- Begin with **Set Up Your AI Toolkit for Agile Project Management** and finish with **Run an AI-Assisted Retrospective and Plan Continuous Improvement**.
-- Apply safe data handling, evidence checks and named human review before using AI-generated or automated outputs.
+| # | Activity | Brief |
+|---|---|---|
+| 1 | [Airbnb — Diagnosing Why a Method Alone Does Not Save a Business](<activities/activity-01-airbnb-diagnosing-method-alone-does/activity-01-airbnb-diagnosing-method-alone-does.md>) | [PDF](<activities/activity-01-airbnb-diagnosing-method-alone-does/activity-01-airbnb-diagnosing-method-alone-does.pdf>) |
+| 2 | [Netflix vs Blockbuster — Innovation as an Operating System](<activities/activity-02-netflix-vs-blockbuster-innovation-as/activity-02-netflix-vs-blockbuster-innovation-as.md>) | [PDF](<activities/activity-02-netflix-vs-blockbuster-innovation-as/activity-02-netflix-vs-blockbuster-innovation-as.pdf>) |
+| 3 | [Positioning GenAI in the Innovation Loop — Where It Helps and Where It Lies](<activities/activity-03-positioning-genai-innovation-loop-where/activity-03-positioning-genai-innovation-loop-where.md>) | [PDF](<activities/activity-03-positioning-genai-innovation-loop-where/activity-03-positioning-genai-innovation-loop-where.pdf>) |
+| 4 | [GE Adventure Series — Reframing the Problem Instead of Fixing the Machine](<activities/activity-04-ge-adventure-series-reframing-problem/activity-04-ge-adventure-series-reframing-problem.md>) | [PDF](<activities/activity-04-ge-adventure-series-reframing-problem/activity-04-ge-adventure-series-reframing-problem.pdf>) |
+| 5 | [IDEO Shopping Cart — Volume, Then Judgement](<activities/activity-05-ideo-shopping-cart-volume-then/activity-05-ideo-shopping-cart-volume-then.md>) | [PDF](<activities/activity-05-ideo-shopping-cart-volume-then/activity-05-ideo-shopping-cart-volume-then.pdf>) |
+| 6 | [Rapid Prototyping with AI — From Concept to Testable Artefact in One Hour](<activities/activity-06-rapid-prototyping-ai-from-concept/activity-06-rapid-prototyping-ai-from-concept.md>) | [PDF](<activities/activity-06-rapid-prototyping-ai-from-concept/activity-06-rapid-prototyping-ai-from-concept.pdf>) |
+| 7 | [Spotify — Reading a Scaling Model Honestly](<activities/activity-07-spotify-reading-scaling-model-honestly/activity-07-spotify-reading-scaling-model-honestly.md>) | [PDF](<activities/activity-07-spotify-reading-scaling-model-honestly/activity-07-spotify-reading-scaling-model-honestly.pdf>) |
+| 8 | [From Hills to Backlog — Converting Ideas into Stories with GenAI](<activities/activity-08-from-hills-backlog-converting-ideas/activity-08-from-hills-backlog-converting-ideas.md>) | [PDF](<activities/activity-08-from-hills-backlog-converting-ideas/activity-08-from-hills-backlog-converting-ideas.pdf>) |
+| 9 | [Running Dual-Track Agile — A Sprint Simulation with AI Assistance](<activities/activity-09-running-dual-track-agile-sprint-simulation/activity-09-running-dual-track-agile-sprint-simulation.md>) | [PDF](<activities/activity-09-running-dual-track-agile-sprint-simulation/activity-09-running-dual-track-agile-sprint-simulation.pdf>) |
+| 10 | [DBS Bank — Scaling Innovation Across 25,000 People](<activities/activity-10-dbs-bank-scaling-innovation-across/activity-10-dbs-bank-scaling-innovation-across.md>) | [PDF](<activities/activity-10-dbs-bank-scaling-innovation-across/activity-10-dbs-bank-scaling-innovation-across.pdf>) |
+| 11 | [Boeing 737 MAX — Systems Thinking and the Cost of Local Optimisation](<activities/activity-11-boeing-737-max-systems-thinking/activity-11-boeing-737-max-systems-thinking.md>) | [PDF](<activities/activity-11-boeing-737-max-systems-thinking/activity-11-boeing-737-max-systems-thinking.pdf>) |
+| 12 | [Innovation Metrics — Designing KPIs That Change a Decision](<activities/activity-12-innovation-metrics-designing-kpis-that/activity-12-innovation-metrics-designing-kpis-that.md>) | [PDF](<activities/activity-12-innovation-metrics-designing-kpis-that/activity-12-innovation-metrics-designing-kpis-that.pdf>) |
 
-> 📖 **Full walkthrough:** see the [Learner Guide](<LG-Generative AI for Agile Project Management (C324).md>) for the complete course narrative, and [labs/README.md](labs/README.md) for the lab index. Slides, the Learner Guide and the Lesson Plan are in [courseware/](courseware/).
+See the [activities index](activities/README.md) for the ed-tools and the full schedule.
 
----
+## Course ed-tools
 
-## Course Toolkit
+| Tool | URL |
+|---|---|
+| Design Thinking Studio | https://alfredang.github.io/designthinking/ |
+| Padlet Classroom Board | https://alfredang.github.io/padlet/ |
 
-| Category | Details |
-|----------|---------|
-| **Duration** | 2 days · 15 instructional hours |
-| **Delivery** | Instructor-led, hands-on practical labs |
-| **Core tools** | ChatGPT · Claude · Google Gemini · Google Workspace |
-| **Practical work** | 12 connected labs with verification steps |
-| **Courseware** | PowerPoint and PDF slides, Word and PDF guides, Markdown lab instructions |
-
----
-
-## Learning Journey
+## Repository contents
 
 ```text
-START
-  Lab 1    Set Up Your AI Toolkit for Agile Project Management
-     │
-     ▼
-  Connected Practical Labs
-  Labs 1–12
-     │
-     ▼
-FINISH
-  Lab 12   Run an AI-Assisted Retrospective and Plan Continuous Improvement
+courseware/    Trainer slides (PPTX + PDF), Lesson Plan and Learner Guide (DOCX + PDF)
+activities/    12 case-study activity briefs (Markdown + PDF)
 ```
 
----
+The Learner Guide is also available as a [Markdown mirror](<LG-Generative AI for Agile Project Management (C324).md>).
 
-## Project Structure
+## Distribution
 
-```text
-C324---Generative-AI-for-Agile-Project-Management/
-├── README.md
-├── LG-Generative AI for Agile Project Management (C324).md
-│
-├── labs/
-│   ├── README.md                 # Start here: complete lab index
-│   └── lab-*.md                    # 12 connected practical activities
-│
-└── courseware/
-    ├── *.pptx / *.pdf             # Trainer and learner slides
-    ├── LG-*.docx / LG-*.pdf       # Learner Guide
-    └── LP-*.docx / LP-*.pdf       # Lesson Plan
-```
+This repository holds the **public learner-facing courseware only**. Trainer-only material — assessment instruments, answer keys and marking guides — is distributed separately through the LMS and is never published here.
 
----
+## Provider
 
-## Getting Started
-
-### Prerequisites
-
-- The accounts and software required for **ChatGPT · Claude · Google Gemini · Google Workspace**. Follow the setup and access notes in each lab.
-- Review [`labs/tools.md`](labs/tools.md) before class for environment, account and safe-use requirements.
-- A modern web browser and Git for cloning the materials.
-- Synthetic or authorised data only. Do not place secrets, personal data or confidential material into an unapproved service.
-- A named human reviewer for facts, calculations, decisions and any externally released output.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/tertiarycourses/C324---Generative-AI-for-Agile-Project-Management.git
-cd C324---Generative-AI-for-Agile-Project-Management
-```
-
-### 2. Open the lab index
-
-Start with [labs/README.md](labs/README.md), then complete Labs 1–12 in order. Each lab provides the activity context, practical steps and a way to verify the result.
-
-### 3. Keep your connected outputs
-
-Store each lab output in the suggested working folder and retain the evidence or review notes requested by the lab. Later activities depend on these approved outputs.
-
----
-
-## Contributing
-
-Contributions, corrections and improvements are welcome:
-
-1. **Fork** the repository.
-2. Create a feature branch: `git checkout -b feature/my-improvement`.
-3. Commit your changes: `git commit -m "Add my improvement"`.
-4. Push the branch: `git push origin feature/my-improvement`.
-5. Open a **Pull Request**.
-
-Found a bug or have an idea? Open an [issue](https://github.com/tertiarycourses/C324---Generative-AI-for-Agile-Project-Management/issues).
-
----
-
-## License
-
-This material is provided for **educational use** as part of the commercial course **Generative AI for Agile Project Management (C324)**. © Tertiary Infotech Pte. Ltd. All rights reserved.
-
----
-
-## Developed By
-
-**Tertiary Infotech Pte. Ltd.** — [Tertiary Courses](https://www.tertiarycourses.com.sg)<br>
-Course: [Generative AI for Agile Project Management (C324)](https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html)
-
-## Acknowledgements
-
-- The teams behind ChatGPT · Claude · Google Gemini · Google Workspace.
-- Course trainers and learners of C324.
-
----
-
-<div align="center">
-
-⭐ **If these materials helped you learn Generative AI for Agile Project Management, star the repository!**
-
-Powered by [Tertiary Infotech Academy Pte Ltd](https://www.tertiaryinfotech.com/)
-
-[📘 Course Page](https://www.tertiarycourses.com.sg/generative-ai-for-agile-project-management.html) · [🧪 Hands-On Labs](labs/README.md) · [📖 Learner Guide](<LG-Generative AI for Agile Project Management (C324).md>)
-
-</div>
+Delivered by **Tertiary Infotech Academy Pte Ltd** (UEN 201200696W).
+[www.tertiarycourses.com.sg](https://www.tertiarycourses.com.sg) · enquiry@tertiaryinfotech.com · +65 6100 0613
